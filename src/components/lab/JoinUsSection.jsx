@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 const PROGRAMS = [
@@ -30,13 +30,6 @@ const PROGRAMS = [
 ];
 
 export default function JoinUsSection() {
-  const [clickedIndex, setClickedIndex] = useState(null);
-
-  const handleCardClick = (e, index) => {
-    e.preventDefault();
-    setClickedIndex(clickedIndex === index ? null : index);
-  };
-
   return (
     <section id="contact" className="py-24 sm:py-32 px-6" style={{ backgroundColor: '#181510' }}>
       <div className="max-w-4xl mx-auto">
@@ -68,31 +61,28 @@ export default function JoinUsSection() {
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {PROGRAMS.map((p, i) => {
-              const isClicked = clickedIndex === i;
-              return (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.15 + i * 0.07 }}
-                  className="rounded-xl border p-5 cursor-pointer block group transition-colors"
-                  style={{ borderColor: isClicked ? '#3D9E6B' : '#2E2820', backgroundColor: '#181510' }}
-                  onMouseEnter={e => !isClicked && (e.currentTarget.style.borderColor = '#3D9E6B')}
-                  onMouseLeave={e => !isClicked && (e.currentTarget.style.borderColor = '#2E2820')}
-                  onClick={(e) => handleCardClick(e, i)}
-                >
-                  <p className="text-sm font-medium leading-snug transition-colors" style={{ color: isClicked ? '#3D9E6B' : '#F0EAE0' }}>
-                    {p.name}
-                  </p>
-                  <p className="text-xs mt-2" style={{ color: '#7A6E62' }}>{p.description}</p>
-                  <a href={p.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                    <p className="text-xs mt-3" style={{ color: '#D9A578' }}>Learn more →</p>
-                  </a>
-                </motion.div>
-              );
-            })}
+            {PROGRAMS.map((p, i) => (
+              <motion.a
+                key={i}
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.15 + i * 0.07 }}
+                className="rounded-xl border p-5 block group transition-colors"
+                style={{ borderColor: '#2E2820', backgroundColor: '#181510' }}
+                onMouseEnter={e => e.currentTarget.style.borderColor = '#3D9E6B'}
+                onMouseLeave={e => e.currentTarget.style.borderColor = '#2E2820'}
+              >
+                <p className="text-sm font-medium leading-snug group-hover:text-green-400 transition-colors" style={{ color: '#F0EAE0' }}>
+                  {p.name}
+                </p>
+                <p className="text-xs mt-2" style={{ color: '#7A6E62' }}>{p.description}</p>
+                <p className="text-xs mt-3" style={{ color: '#D9A578' }}>Learn more →</p>
+              </motion.a>
+            ))}
           </div>
         </motion.div>
       </div>
