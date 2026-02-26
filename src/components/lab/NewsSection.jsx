@@ -5,16 +5,6 @@ import { motion } from "framer-motion";
 // Each item: { date: "Month Year", title: "...", description: "..." (optional) }
 const NEWS = [
   {
-    date: "February 2026",
-    title: "CIDER Lab awarded DIMEX grant.",
-    description: "We have been awarded a grant through Dartmouth's DIMEX program to build collaborations between Dartmouth researchers and researchers in the Middle East and North Africa.",
-  },
-  {
-    date: "February 2026",
-    title: "CIDER Lab awarded DARPA COMPASS contract.",
-    description: "We have been awarded a $248,000 contract for the DARPA program on Critical Orientation of Mathematics to Produce Advancements in Science and Security (COMPASS).",
-  },
-  {
     date: "January 2026",
     title: "Prof. Bijan Mazaheri presented at the Tsinghua Sanya International Mathematics Forum in Sanya, China.",
     description: 'Talk title: "Distribution-level Techniques for Heterogeneous Causal Relationships."',
@@ -25,23 +15,33 @@ const NEWS = [
     description: "Prof. Mazaheri presented at the CauScien Workshop and received a Top Reviewer Award.",
   },
   {
+    date: "October 2025",
+    title: "CIDER Lab awarded DIMEX grant.",
+    description: "We have been awarded a grant through Dartmouth's DIMEX program to build collaborations between Dartmouth researchers and researchers in the Middle East and North Africa.",
+  },
+  {
+    date: "October 2025",
+    title: "Prof. Bijan Mazaheri gave an invited talk at Geisel School of Medicine at Dartmouth.",
+    description: 'Talk title: "Causal Underpinnings of Information Synthesis."',
+  },
+  {
     date: "September 2025",
     title: "Sophia Xiao and Zou Yang join the CIDER Lab as PhD students.",
     description: "Welcome to the group!",
   },
   {
-    date: "Summer 2025",
-    title: "Prof. Bijan Mazaheri gave invited talks at Dartmouth Medical School and Williams College Statistics Colloquium.",
+    date: "July 2025",
+    title: "CIDER Lab awarded DARPA COMPASS contract.",
+    description: "We have been awarded a $248,000 contract for the DARPA program on Critical Orientation of Mathematics to Produce Advancements in Science and Security (COMPASS).",
+  },
+  {
+    date: "Spring 2025",
+    title: "Prof. Bijan Mazaheri gave an invited talk at Williams College.",
     description: 'Talk title: "Causal Underpinnings of Information Synthesis."',
   },
   {
-    date: "Summer 2025",
-    title: "Prof. Bijan Mazaheri gave an invited talk at the Tuck School of Business (Ops/MS Brown Bag Seminar).",
-    description: 'Talk title: "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
-  },
-  {
-    date: "February 2025",
-    title: "Prof. Bijan Mazaheri presented at the Boston University Machine Learning Symposium.",
+    date: "Spring 2025",
+    title: "Prof. Bijan Mazaheri gave an invited talk at Tuck School of Business at Dartmouth.",
     description: 'Talk title: "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
   },
   {
