@@ -33,15 +33,15 @@ const NEWS = [
   },
   {
     date: "February 2026",
-    title: "CIDER Lab went ice skating at Lake Morey with the Gallivan Group.",
+    title: "CEDAR Lab went ice skating at Lake Morey with the Gallivan Group.",
   },
   {
     date: "October 2025",
-    title: "CIDER Lab went apple picking with the Gallivan Group.",
+    title: "CEDAR Lab went apple picking with the Gallivan Group.",
   },
   {
     date: "October 2025",
-    title: "CIDER Lab awarded DIMEX grant.",
+    title: "CEDAR Lab awarded DIMEX grant.",
     description: "We have been awarded a grant through Dartmouth's DIMEX program to build collaborations between Dartmouth researchers and researchers in the Middle East and North Africa.",
   },
   {
