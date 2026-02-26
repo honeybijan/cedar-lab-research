@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { FileText, ImageIcon, Video, Copy, Check, SlidersHorizontal } from "lucide-react";
 
