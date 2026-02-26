@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 // ── ADD FUNDING SOURCES HERE ──────────────────────────────────────────────────
 // Each item: { agency: "NSF", grant: "Award #...", title: "Grant Title", url: "https://..." (optional) }
 const FUNDING = [
-  // { agency: "NSF", grant: "Award #2345678", title: "Causal Inference in AI Systems", url: "https://nsf.gov/..." },
+  {
+    agency: "DARPA ARC",
+    grant: "Contract No. HR0011-25-3-0212",
+    title: "Detecting Data Manipulation via Causal Information Geometry",
+  },
 ];
 // ─────────────────────────────────────────────────────────────────────────────
 
