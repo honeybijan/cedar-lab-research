@@ -3,9 +3,19 @@ import { motion } from "framer-motion";
 
 const PROGRAMS = [
   {
-    name: "Thayer School of Engineering",
-    description: "PhD program in Engineering Sciences",
+    name: "PhD and MS in Engineering",
+    description: "Thayer School of Engineering at Dartmouth",
     url: "https://engineering.dartmouth.edu/graduate/phd",
+  },
+  {
+    name: "Engineering PhD Innovation Program (PHDI)",
+    description: "Thayer School of Engineering at Dartmouth",
+    url: "https://engineering.dartmouth.edu/graduate/phdi",
+  },
+  {
+    name: "Industry PhD in Engineering",
+    description: "Thayer School of Engineering at Dartmouth",
+    url: "https://engineering.dartmouth.edu/graduate/phd/industry-research-option",
   },
   {
     name: "Quantitative Biological Sciences (QBS)",
@@ -13,8 +23,8 @@ const PROGRAMS = [
     url: "https://geiselmed.dartmouth.edu/qbs/",
   },
   {
-    name: "Computation and Modeling (CSMP)",
-    description: "Guarini School of Graduate and Advanced Studies",
+    name: "Computational Science and Modeling (CSMP)",
+    description: "Guarini School of Graduate and Advanced Studies at Dartmouth",
     url: "https://sites.dartmouth.edu/csmp/",
   },
 ];
