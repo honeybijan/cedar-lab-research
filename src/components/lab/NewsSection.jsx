@@ -39,6 +39,11 @@ const NEWS = [
     description: "Welcome to the group!",
   },
   {
+    date: "September 2025",
+    title: "Sreshth Tiwari, Connor Kilkenny, and Titus Johnson join the CIDER Lab as undergraduate researchers.",
+    description: "They have been awarded Dartmouth URAD funding to support their research with the lab. Welcome!",
+  },
+  {
     date: "July 2025",
     title: "CIDER Lab awarded DARPA COMPASS contract.",
     description: "We have been awarded a $248,000 contract for the DARPA program on Critical Orientation of Mathematics to Produce Advancements in Science and Security (COMPASS).",
