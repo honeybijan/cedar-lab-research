@@ -34,7 +34,7 @@ export default function NavBar() {
           className="flex-shrink-0 text-sm font-semibold tracking-wide transition-opacity hover:opacity-70"
           style={{ color: '#3D9E6B' }}
         >
-          CIDER Lab
+          CEDAR Lab
         </button>
 
         <div className="hidden sm:flex items-center flex-wrap justify-end">

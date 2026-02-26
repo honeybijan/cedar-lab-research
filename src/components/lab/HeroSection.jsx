@@ -25,7 +25,7 @@ export default function HeroSection() {
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight mb-2" style={{ color: '#F0EAE0' }}>
             The{" "}
-            <span className="font-semibold" style={{ color: '#3D9E6B' }}>CIDER</span>
+            <span className="font-semibold" style={{ color: '#3D9E6B' }}>CEDAR</span>
             {" "}Lab
           </h1>
         </motion.div>
@@ -36,7 +36,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
           <p className="text-base sm:text-lg md:text-xl font-light tracking-wide mt-4 mb-10" style={{ color: '#D9A578' }}>
-            Causal Information for Discovery, Experimentation, and Recourse
+            Causality for Experimentation, Discovery, and Algorithmic Recourse
           </p>
         </motion.div>
 
