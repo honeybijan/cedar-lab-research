@@ -18,9 +18,9 @@ export default function HeroSection() {
         >
           <div className="mb-8 flex justify-center">
             <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/cd12e2cf3_Gemini_Generated_Image_nszczynszczynszc.png"
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/36605d6d2_Gemini_Generated_Image_wl2t7qwl2t7qwl2t.png"
               alt="CEDAR Lab Logo"
-              className="h-32 w-auto"
+              className="h-40 w-auto"
             />
           </div>
 
