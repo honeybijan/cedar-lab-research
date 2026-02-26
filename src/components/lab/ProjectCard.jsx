@@ -13,49 +13,29 @@ export default function ProjectCard({ project, index }) {
       transition={{ duration: 0.5, delay: index * 0.08 }}
     >
       <div
-        className="group relative rounded-xl border transition-all duration-400 cursor-pointer overflow-hidden"
+        className="group relative rounded-xl border cursor-pointer overflow-hidden transition-colors duration-300"
         style={{
-          borderColor: isExpanded ? 'var(--cider)' : 'var(--border)',
-          backgroundColor: isExpanded ? 'var(--bg-card-hover)' : 'var(--bg-card)',
+          borderColor: isExpanded ? '#C4834A' : '#2E2820',
+          backgroundColor: isExpanded ? '#1F1B13' : '#181510',
         }}
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        {/* Left accent */}
-        <div 
-          className="absolute left-0 top-0 bottom-0 w-[3px] transition-all duration-400"
-          style={{ 
-            background: isExpanded 
-              ? 'linear-gradient(180deg, var(--dartmouth), var(--cider))' 
-              : 'transparent' 
-          }}
-        />
+        <div className="absolute left-0 top-0 bottom-0 w-[3px] transition-all duration-300"
+          style={{ background: isExpanded ? 'linear-gradient(180deg, #3D9E6B, #C4834A)' : 'transparent' }} />
 
         <div className="p-5 sm:p-6">
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-4">
-              <div 
-                className="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-semibold flex-shrink-0 transition-all duration-300"
-                style={{ 
-                  backgroundColor: isExpanded ? 'rgba(0, 105, 62, 0.12)' : 'var(--border)',
-                  color: isExpanded ? 'var(--dartmouth-light)' : 'var(--cider-light)',
-                }}
-              >
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-semibold flex-shrink-0"
+                style={{ backgroundColor: '#2E2820', color: '#D9A578' }}>
                 {String(index + 1).padStart(2, '0')}
               </div>
-              <h3 
-                className="text-base sm:text-lg font-medium tracking-tight transition-colors duration-300"
-                style={{ color: isExpanded ? 'var(--cider-dark)' : 'var(--text-primary)' }}
-              >
+              <h3 className="text-base sm:text-lg font-medium tracking-tight" style={{ color: '#F0EAE0' }}>
                 {project.title}
               </h3>
             </div>
-
-            <motion.div
-              animate={{ rotate: isExpanded ? 90 : 0 }}
-              transition={{ duration: 0.25 }}
-              className="flex-shrink-0"
-            >
-              <ChevronRight className="w-4 h-4" style={{ color: 'var(--cider-light)' }} />
+            <motion.div animate={{ rotate: isExpanded ? 90 : 0 }} transition={{ duration: 0.25 }} className="flex-shrink-0">
+              <ChevronRight className="w-4 h-4" style={{ color: '#A09080' }} />
             </motion.div>
           </div>
 
@@ -68,51 +48,34 @@ export default function ProjectCard({ project, index }) {
                 transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 className="overflow-hidden"
               >
-                <div className="pt-5 mt-4 ml-12" style={{ borderTop: '1px solid var(--border)' }}>
+                <div className="pt-5 mt-4 ml-12" style={{ borderTop: '1px solid #2E2820' }}>
                   {project.description ? (
-                    <p 
-                      className="text-sm leading-relaxed mb-4"
-                      style={{ color: 'var(--text-secondary)' }}
-                    >
+                    <p className="text-sm leading-relaxed mb-4" style={{ color: '#C8BAA8' }}>
                       {project.description}
                     </p>
                   ) : (
-                    <p 
-                      className="text-sm italic mb-4"
-                      style={{ color: 'var(--cider-light)' }}
-                    >
+                    <p className="text-sm italic mb-4" style={{ color: '#7A6E62' }}>
                       Description coming soon...
                     </p>
                   )}
 
                   {project.papers && project.papers.length > 0 && (
                     <div>
-                      <p 
-                        className="text-xs font-semibold tracking-[0.15em] uppercase mb-3"
-                        style={{ color: 'var(--dartmouth-light)' }}
-                      >
+                      <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-3" style={{ color: '#3D9E6B' }}>
                         Selected Papers
                       </p>
                       <ul className="space-y-2">
                         {project.papers.map((paper, i) => (
                           <li key={i} className="flex items-start gap-2.5">
-                            <FileText 
-                              className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" 
-                              style={{ color: 'var(--cider-light)' }} 
-                            />
+                            <FileText className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" style={{ color: '#D9A578' }} />
                             <div>
-                              <a
-                                href={paper.url || "#"}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-sm font-medium hover:underline transition-colors"
-                                style={{ color: 'var(--dartmouth-light)' }}
-                                         onClick={(e) => e.stopPropagation()}
-                              >
+                              <a href={paper.url || "#"} target="_blank" rel="noopener noreferrer"
+                                className="text-sm font-medium hover:underline" style={{ color: '#3D9E6B' }}
+                                onClick={(e) => e.stopPropagation()}>
                                 {paper.title}
                               </a>
                               {paper.authors && (
-                                <p className="text-xs mt-0.5" style={{ color: 'var(--text-secondary)' }}>
+                                <p className="text-xs mt-0.5" style={{ color: '#A09080' }}>
                                   {paper.authors}
                                   {paper.venue && <span> · {paper.venue}</span>}
                                   {paper.year && <span> ({paper.year})</span>}
@@ -126,12 +89,7 @@ export default function ProjectCard({ project, index }) {
                   )}
 
                   {(!project.papers || project.papers.length === 0) && (
-                    <p 
-                      className="text-xs italic"
-                      style={{ color: 'var(--cider-light)' }}
-                    >
-                      Papers to be added
-                    </p>
+                    <p className="text-xs italic" style={{ color: '#7A6E62' }}>Papers to be added</p>
                   )}
                 </div>
               </motion.div>

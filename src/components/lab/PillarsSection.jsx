@@ -62,7 +62,7 @@ const PILLARS = [
 
 export default function PillarsSection() {
   return (
-    <section id="pillars" className="py-24 sm:py-32 px-6" style={{ backgroundColor: 'var(--bg-mid)' }}>
+    <section id="pillars" className="py-24 sm:py-32 px-6" style={{ backgroundColor: '#181510' }}>
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -71,20 +71,14 @@ export default function PillarsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span 
-            className="text-xs font-semibold tracking-[0.3em] uppercase"
-            style={{ color: 'var(--cider-light)' }}
-          >
+          <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#D9A578' }}>
             Research Pillars
           </span>
-          <h2 
-            className="text-3xl sm:text-4xl font-light tracking-tight mt-4"
-            style={{ color: 'var(--text-primary)' }}
-          >
+          <h2 className="text-3xl sm:text-4xl font-light tracking-tight mt-4" style={{ color: '#F0EAE0' }}>
             Five Pillars of{" "}
-            <span className="font-semibold" style={{ color: 'var(--dartmouth-light)' }}>CIDER</span>
+            <span className="font-semibold" style={{ color: '#3D9E6B' }}>CIDER</span>
           </h2>
-          <div className="w-12 h-[1px] mx-auto mt-6" style={{ background: 'var(--border-light)' }} />
+          <div className="w-12 h-[1px] mx-auto mt-6" style={{ background: '#3A3228' }} />
         </motion.div>
 
         <div className="space-y-4">

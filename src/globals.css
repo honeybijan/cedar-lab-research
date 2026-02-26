@@ -3,52 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --dartmouth: #00693E;
-  --dartmouth-dark: #004D2C;
-  --dartmouth-light: #3D9E6B;
-  --cider: #C4834A;
-  --cider-dark: #A66330;
-  --cider-light: #D9A578;
-  --bg-deep: #111009;
-  --bg-mid: #181510;
-  --bg-card: #1F1B13;
-  --bg-card-hover: #252016;
-  --border: #2E2820;
-  --border-light: #3A3228;
-  --text-primary: #F0EAE0;
-  --text-secondary: #A09080;
-  --text-muted: #6A5E52;
-}
-
 @layer base {
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background-color: var(--bg-deep);
-    color: var(--text-primary);
+    background-color: #111009;
+    color: #F0EAE0;
   }
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-mid);
+  background: #181510;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--border-light);
+  background: #3A3228;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--cider-dark);
+  background: #A66330;
 }

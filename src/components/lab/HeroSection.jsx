@@ -3,21 +3,12 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background */}
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 60% 40%, rgba(0,105,62,0.07) 0%, transparent 60%), radial-gradient(ellipse at 30% 70%, rgba(196,131,74,0.05) 0%, transparent 50%), var(--bg-deep)' }} />
-
-      {/* Subtle grid texture */}
-      <div 
-        className="absolute inset-0 opacity-[0.025]"
-        style={{
-          backgroundImage: 'linear-gradient(var(--text-primary) 1px, transparent 1px), linear-gradient(90deg, var(--text-primary) 1px, transparent 1px)',
-          backgroundSize: '80px 80px'
-        }}
-      />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20" style={{ backgroundColor: '#111009' }}>
+      {/* Background glow */}
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 60% 40%, rgba(0,105,62,0.09) 0%, transparent 60%), radial-gradient(ellipse at 30% 70%, rgba(196,131,74,0.06) 0%, transparent 50%)' }} />
 
       {/* Top accent line */}
-      <div className="absolute left-0 top-0 w-full h-[1px]" style={{ background: 'linear-gradient(90deg, transparent 0%, var(--dartmouth) 30%, var(--cider) 70%, transparent 100%)' }} />
+      <div className="absolute left-0 top-0 w-full h-[1px]" style={{ background: 'linear-gradient(90deg, transparent 0%, #00693E 30%, #C4834A 70%, transparent 100%)' }} />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.div
@@ -26,23 +17,15 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="mb-6">
-            <span 
-              className="inline-block text-xs font-medium tracking-[0.3em] uppercase px-4 py-2 rounded-full"
-              style={{ 
-                color: '#3D9E6B', 
-                border: '1px solid rgba(61,158,107,0.35)',
-                backgroundColor: 'rgba(0, 105, 62, 0.08)'
-              }}
-            >
+            <span className="inline-block text-xs font-medium tracking-[0.3em] uppercase px-4 py-2 rounded-full"
+              style={{ color: '#3D9E6B', border: '1px solid rgba(61,158,107,0.35)', backgroundColor: 'rgba(0,105,62,0.08)' }}>
               Thayer School of Engineering at Dartmouth
             </span>
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight mb-2" style={{ color: '#F0EAE0' }}>
             The{" "}
-            <span className="font-semibold" style={{ color: 'var(--dartmouth-light)' }}>
-              CIDER
-            </span>
+            <span className="font-semibold" style={{ color: '#3D9E6B' }}>CIDER</span>
             {" "}Lab
           </h1>
         </motion.div>
@@ -52,10 +35,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p 
-            className="text-base sm:text-lg md:text-xl font-light tracking-wide mt-4 mb-10"
-            style={{ color: '#D9A578' }}
-          >
+          <p className="text-base sm:text-lg md:text-xl font-light tracking-wide mt-4 mb-10" style={{ color: '#D9A578' }}>
             Causal Information for Detection, Experimentation, and Recourse
           </p>
         </motion.div>
@@ -65,20 +45,14 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="w-12 h-[1px] mx-auto mb-10" style={{ background: 'var(--border-light)' }} />
-          <p 
-            className="text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-light"
-            style={{ color: '#C8BAA8' }}
-          >
+          <div className="w-12 h-[1px] mx-auto mb-10" style={{ background: '#3A3228' }} />
+          <p className="text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-light" style={{ color: '#C8BAA8' }}>
             Our lab investigates the fundamental information-theoretic limits of causal relationships 
             and how they are stored within modern AI architectures. We develop mathematical tools to detect 
             hidden stories in heterogeneous data, design optimal experiments to map system dependencies, 
             and provide algorithmic recourse to unmask the decision-making logic of "black-box" models.
           </p>
-          <p 
-            className="text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-light mt-4"
-            style={{ color: '#C8BAA8' }}
-          >
+          <p className="text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-light mt-4" style={{ color: '#C8BAA8' }}>
             By bridging theoretical computer science and causal inference, we aim to prove the strength 
             and fairness of AI systems while preserving the boundaries of proprietary and confidential information.
           </p>
@@ -90,19 +64,16 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-16"
         >
-          <button 
+          <button
             onClick={() => document.getElementById('pillars')?.scrollIntoView({ behavior: 'smooth' })}
             className="group flex flex-col items-center gap-2 mx-auto cursor-pointer"
           >
             <span className="text-xs tracking-[0.2em] uppercase" style={{ color: '#7A6E62' }}>
               Explore Our Research
             </span>
-            <motion.div
-              animate={{ y: [0, 6, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="opacity-30">
-                <path d="M10 4V16M10 16L4 10M10 16L16 10" stroke="var(--cider-light)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <motion.div animate={{ y: [0, 6, 0] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="opacity-50">
+                <path d="M10 4V16M10 16L4 10M10 16L16 10" stroke="#D9A578" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </motion.div>
           </button>
