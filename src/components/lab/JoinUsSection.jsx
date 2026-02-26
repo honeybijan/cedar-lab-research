@@ -57,7 +57,7 @@ export default function JoinUsSection() {
         >
           <p className="text-sm sm:text-base leading-relaxed mb-12 max-w-2xl mx-auto text-center" style={{ color: '#C8BAA8' }}>
             We welcome motivated students interested in causal inference, information theory, and AI fairness.
-            CIDER Lab advises students through the following graduate programs at Dartmouth:
+            CEDAR Lab advises students through the following graduate programs at Dartmouth:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
