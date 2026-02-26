@@ -8,8 +8,8 @@ const PILLARS = [
     subtitle: "Unmasking causal heterogeneity and obscured stories in mixture models.",
     questions: [
       "How can we detect and quantify heterogeneous settings to identify bad actors or emerging diseases?",
-      "When and how can causal mixtures reveal — or conceal — where I am getting my information?",
-      "What is the difference between identifying rates of AI usage, crime, and corruption verses individual characterization?",
+      "When do causal mixture models reveal — or conceal — the true source of our information?",
+      "What distinguishes measuring aggregate rates of AI use, crime, or corruption from characterizing individuals?",
     ],
   },
   {
@@ -17,8 +17,8 @@ const PILLARS = [
     subtitle: "Theoretical design of optimal and efficient perturbations for system discovery.",
     questions: [
       "How should experiments be sequenced to maximize information gain?",
-      "What is the best way to perturb a system to learn about its causal dependencies?",
-      "Do we need to know when we succeed in an intervention, or is trying enough?",
+      "What is the most effective way to perturb a system to uncover its causal dependencies?",
+      "Must we know whether an intervention succeeded, or is the attempt itself informative?",
     ],
   },
   {
@@ -26,26 +26,26 @@ const PILLARS = [
     subtitle: "Counterfactual frameworks for AI fairness, privacy, and model-sharing.",
     questions: [
       "What counterfactual guarantees can we provide for algorithmic fairness?",
-      "How do we solve the reproducibility crisis without sharing private information or company secrets?",
-      "Can we design recourse mechanisms that are robust to model updates?",
+      "How do we address the reproducibility crisis without exposing private data or proprietary models?",
+      "Can recourse mechanisms be designed to remain robust as models evolve?",
     ],
   },
   {
     title: "Synthesis",
     subtitle: "Comparing and correcting for batch effects across disparate data sources.",
     questions: [
-      "How can we disentangle information from experimental conditions from scientific information?",
-      "What methods reliably correct for batch effects without distorting causal signal?",
-      "How do we detect and handle conflicting evidence across sources?",
+      "How do we disentangle the effects of experimental conditions from genuine scientific signal?",
+      "What methods reliably correct for batch effects without distorting causal structure?",
+      "How do we detect and reconcile conflicting evidence across heterogeneous sources?",
     ],
   },
   {
     title: "Fundamentals",
     subtitle: "Establishing the universal limits of causal information recovery.",
     questions: [
-      "When can we and cant we learn causality and what does this tell us about the state of science economics?",
-      "How do the errors within different causal questions co-occur and interact?",
-      "What are the information theoretical limitations of detecting causal relationships and how can they be exploited?",
+      "When can we — and when can't we — learn causality, and what does this reveal about science and economics?",
+      "How do errors across different causal questions co-occur and interact?",
+      "What are the information-theoretic limits of detecting causal relationships, and how can they be exploited?",
     ],
   },
 ];
