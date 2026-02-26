@@ -181,6 +181,28 @@ export default function PeopleSection() {
           )}
         </motion.div>
 
+        {/* Alumni */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mb-16"
+        >
+          <SectionLabel>Alumni</SectionLabel>
+          {ALUMNI.length === 0 ? (
+            <EmptyState label="Alumni to be added." />
+          ) : (
+            <div className="flex flex-wrap gap-3">
+              {ALUMNI.map((a, i) => (
+                <div key={i} className="rounded-lg border px-4 py-2" style={{ borderColor: '#2E2820', backgroundColor: '#181510' }}>
+                  <p className="text-sm" style={{ color: '#A09080' }}>{a.name}</p>
+                </div>
+              ))}
+            </div>
+          )}
+        </motion.div>
+
         {/* Collaborators */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
