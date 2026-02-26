@@ -11,7 +11,7 @@ const PI = {
   scholar: "https://scholar.google.com/citations?user=bijanmazaheri",
   github: "https://github.com/bijanmazaheri",
   linkedin: "https://www.linkedin.com/in/bijanmazaheri",
-  cv: "https://bijanmazaheri.com/",
+  cv: "https://bijanmazaheri.com/uploads/bijanmazaheri_cv.pdf",
 };
 
 const PHD_STUDENTS = [
