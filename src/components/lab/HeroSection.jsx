@@ -29,8 +29,8 @@ export default function HeroSection() {
             <span 
               className="inline-block text-xs font-medium tracking-[0.3em] uppercase px-4 py-2 rounded-full"
               style={{ 
-                color: 'var(--dartmouth-light)', 
-                border: '1px solid rgba(61,158,107,0.25)',
+                color: '#3D9E6B', 
+                border: '1px solid rgba(61,158,107,0.35)',
                 backgroundColor: 'rgba(0, 105, 62, 0.08)'
               }}
             >
@@ -38,7 +38,7 @@ export default function HeroSection() {
             </span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight mb-2" style={{ color: 'var(--text-primary)' }}>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight mb-2" style={{ color: '#F0EAE0' }}>
             The{" "}
             <span className="font-semibold" style={{ color: 'var(--dartmouth-light)' }}>
               CIDER
@@ -54,7 +54,7 @@ export default function HeroSection() {
         >
           <p 
             className="text-base sm:text-lg md:text-xl font-light tracking-wide mt-4 mb-10"
-            style={{ color: 'var(--cider-light)' }}
+            style={{ color: '#D9A578' }}
           >
             Causal Information for Detection, Experimentation, and Recourse
           </p>
@@ -68,7 +68,7 @@ export default function HeroSection() {
           <div className="w-12 h-[1px] mx-auto mb-10" style={{ background: 'var(--border-light)' }} />
           <p 
             className="text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-light"
-            style={{ color: 'var(--text-secondary)' }}
+            style={{ color: '#C8BAA8' }}
           >
             Our lab investigates the fundamental information-theoretic limits of causal relationships 
             and how they are stored within modern AI architectures. We develop mathematical tools to detect 
@@ -77,7 +77,7 @@ export default function HeroSection() {
           </p>
           <p 
             className="text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-light mt-4"
-            style={{ color: 'var(--text-secondary)' }}
+            style={{ color: '#C8BAA8' }}
           >
             By bridging theoretical computer science and causal inference, we aim to prove the strength 
             and fairness of AI systems while preserving the boundaries of proprietary and confidential information.
@@ -94,7 +94,7 @@ export default function HeroSection() {
             onClick={() => document.getElementById('pillars')?.scrollIntoView({ behavior: 'smooth' })}
             className="group flex flex-col items-center gap-2 mx-auto cursor-pointer"
           >
-            <span className="text-xs tracking-[0.2em] uppercase" style={{ color: 'var(--text-muted)' }}>
+            <span className="text-xs tracking-[0.2em] uppercase" style={{ color: '#7A6E62' }}>
               Explore Our Research
             </span>
             <motion.div
