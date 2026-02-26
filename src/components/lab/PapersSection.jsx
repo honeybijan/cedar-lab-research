@@ -134,6 +134,23 @@ function CiteButton({ bibtex }) {
   );
 }
 
+function AuthorList({ authors }) {
+  const parts = authors.split(", ");
+  return (
+    <p className="text-sm mt-2" style={{ color: '#A09080' }}>
+      {parts.map((author, i) => {
+        const isMember = LAB_MEMBERS.some(m => author.includes(m));
+        return (
+          <span key={i}>
+            {isMember ? <strong style={{ color: '#C8BAA8' }}>{author}</strong> : author}
+            {i < parts.length - 1 ? ", " : ""}
+          </span>
+        );
+      })}
+    </p>
+  );
+}
+
 function PaperCard({ paper, index }) {
   return (
     <motion.div
@@ -147,7 +164,7 @@ function PaperCard({ paper, index }) {
       <h3 className="text-base font-medium leading-snug" style={{ color: '#F0EAE0' }}>
         {paper.title}
       </h3>
-      <p className="text-sm mt-2" style={{ color: '#A09080' }}>{paper.authors}</p>
+      <AuthorList authors={paper.authors} />
       <p className="text-xs mt-1" style={{ color: '#3D9E6B' }}>
         {paper.venue}{paper.year ? ` · ${paper.year}` : ""}
       </p>
