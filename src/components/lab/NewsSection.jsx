@@ -4,8 +4,25 @@ import { motion } from "framer-motion";
 // ── ADD NEWS ITEMS HERE ───────────────────────────────────────────────────────
 // Each item: { date: "Month Year", title: "...", description: "..." (optional) }
 const NEWS = [
-  // { date: "January 2026", title: "Paper accepted at NeurIPS 2026", description: "Our work on causal discovery was accepted." },
-  // { date: "September 2025", title: "Lab officially launched at Dartmouth!" },
+  {
+    date: "February 2026",
+    title: "CIDER Lab awarded DIMEX grant.",
+    description: "We have been awarded a grant through Dartmouth's DIMEX program to build collaborations between Dartmouth researchers and researchers in the Middle East and North Africa.",
+  },
+  {
+    date: "February 2026",
+    title: "CIDER Lab awarded DARPA COMPASS contract.",
+    description: "We have been awarded a $248,000 contract for the DARPA program on Critical Orientation of Mathematics to Produce Advancements in Science and Security (COMPASS).",
+  },
+  {
+    date: "January 2026",
+    title: "Prof. Bijan Mazaheri presented at the Tsinghua Sanya International Mathematics Forum in Sanya, China.",
+  },
+  {
+    date: "January 2025",
+    title: "CIDER Lab launches at Dartmouth's Thayer School of Engineering.",
+    description: "Prof. Bijan Mazaheri joins Dartmouth as an Assistant Professor, founding the Causal Inference, Discovery, and Experimental Reasoning (CIDER) Lab.",
+  },
 ];
 // ─────────────────────────────────────────────────────────────────────────────
 
