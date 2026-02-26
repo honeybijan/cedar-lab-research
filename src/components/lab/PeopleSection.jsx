@@ -95,12 +95,38 @@ export default function PeopleSection() {
                 <p className="text-sm mt-1" style={{ color: '#3D9E6B' }}>{PI.title}</p>
                 <p className="text-xs mt-0.5" style={{ color: '#7A6E62' }}>{PI.affiliation}</p>
                 <p className="text-sm leading-relaxed mt-4" style={{ color: '#C8BAA8' }}>{PI.bio}</p>
-                {PI.email && (
-                  <a href={`mailto:${PI.email}`} className="inline-block text-xs mt-3 hover:underline"
-                    style={{ color: '#D9A578' }}>
-                    {PI.email}
-                  </a>
-                )}
+                <div className="flex flex-wrap gap-3 mt-4">
+                  {PI.email && (
+                    <a href={`mailto:${PI.email}`} className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors hover:opacity-80"
+                      style={{ backgroundColor: '#2E2820', color: '#D9A578' }}>
+                      <Mail className="w-3 h-3" /> Email
+                    </a>
+                  )}
+                  {PI.scholar && (
+                    <a href={PI.scholar} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors hover:opacity-80"
+                      style={{ backgroundColor: '#2E2820', color: '#A09080' }}>
+                      <BookOpen className="w-3 h-3" /> Google Scholar
+                    </a>
+                  )}
+                  {PI.github && (
+                    <a href={PI.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors hover:opacity-80"
+                      style={{ backgroundColor: '#2E2820', color: '#A09080' }}>
+                      <Github className="w-3 h-3" /> GitHub
+                    </a>
+                  )}
+                  {PI.linkedin && (
+                    <a href={PI.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors hover:opacity-80"
+                      style={{ backgroundColor: '#2E2820', color: '#A09080' }}>
+                      <Linkedin className="w-3 h-3" /> LinkedIn
+                    </a>
+                  )}
+                  {PI.cv && (
+                    <a href={PI.cv} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors hover:opacity-80"
+                      style={{ backgroundColor: 'rgba(61,158,107,0.12)', color: '#3D9E6B' }}>
+                      <FileText className="w-3 h-3" /> CV
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
