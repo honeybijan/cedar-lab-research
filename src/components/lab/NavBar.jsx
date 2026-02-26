@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 const NAV_ITEMS = [
@@ -11,14 +11,6 @@ const NAV_ITEMS = [
 ];
 
 export default function NavBar() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const scrollTo = (id) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -29,46 +21,39 @@ export default function NavBar() {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
+      className="fixed top-0 left-0 right-0 z-50"
       style={{
-        backgroundColor: scrolled ? 'rgba(17, 16, 9, 0.92)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(12px)' : 'none',
-        borderBottom: scrolled ? '1px solid var(--border)' : '1px solid transparent',
+        backgroundColor: 'rgba(17, 16, 9, 0.85)',
+        backdropFilter: 'blur(12px)',
+        borderBottom: '1px solid rgba(58, 50, 40, 0.5)',
       }}
     >
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
-        {/* Logo / Lab name */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex-shrink-0 text-sm font-semibold tracking-wide transition-opacity hover:opacity-70"
-          style={{ color: 'var(--dartmouth-light)' }}
+          style={{ color: '#3D9E6B' }}
         >
           CIDER Lab
         </button>
 
-        {/* Nav links */}
-        <div className="hidden sm:flex items-center gap-0 flex-wrap justify-end">
+        <div className="hidden sm:flex items-center flex-wrap justify-end">
           {NAV_ITEMS.map((item, i) => (
-            <React.Fragment key={item.id}>
+            <span key={item.id} className="flex items-center">
               {i > 0 && (
-                <span className="text-xs mx-2.5" style={{ color: 'var(--text-muted)' }}>|</span>
+                <span className="text-xs mx-2.5" style={{ color: '#3A3228' }}>|</span>
               )}
               <button
                 onClick={() => scrollTo(item.id)}
-                className="text-xs tracking-wide transition-colors hover:opacity-100"
-                style={{ color: 'var(--text-secondary)' }}
-                onMouseEnter={e => e.currentTarget.style.color = 'var(--cider-light)'}
-                onMouseLeave={e => e.currentTarget.style.color = 'var(--text-secondary)'}
+                className="text-xs tracking-wide transition-colors"
+                style={{ color: '#A09080' }}
+                onMouseEnter={e => e.currentTarget.style.color = '#D9A578'}
+                onMouseLeave={e => e.currentTarget.style.color = '#A09080'}
               >
                 {item.label}
               </button>
-            </React.Fragment>
+            </span>
           ))}
-        </div>
-
-        {/* Mobile: collapsed nav */}
-        <div className="sm:hidden flex items-center">
-          <span className="text-xs" style={{ color: 'var(--text-muted)' }}>↓ Scroll</span>
         </div>
       </div>
     </motion.nav>
