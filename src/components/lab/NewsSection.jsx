@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { ChevronDown, ChevronUp } from "lucide-react";
+
+const PREVIEW_COUNT = 5;
 
 // ── ADD NEWS ITEMS HERE ───────────────────────────────────────────────────────
 // Each item: { date: "Month Year", title: "...", description: "..." (optional) }
