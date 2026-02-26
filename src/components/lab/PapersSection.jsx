@@ -2,39 +2,38 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FileText, ImageIcon, Video, Quote, Copy, Check } from "lucide-react";
 
-// ── ADD YOUR PAPERS HERE ──────────────────────────────────────────────────────
-// Each paper can have: title, authors, venue, year, abstract (optional)
-// Optional links: paper (url), poster (url), talk (url), cite (bibtex string)
+// Lab members whose names should be bolded in author lists
+const LAB_MEMBERS = ["Bijan Mazaheri", "Sophia Xiao", "Zou Yang"];
 
 const PUBLICATIONS = [
   {
     title: "Synthetic Potential Outcomes and Causal Mixture Identifiability",
     authors: "Bijan Mazaheri, Chandler Squires, Caroline Uhler",
-    venue: "AISTATS 2025",
+    venue: "AISTATS",
     year: 2025,
   },
   {
     title: "Omitted Labels Induce Nontransitive Paradoxes in Causality",
     authors: "Bijan Mazaheri, Siddharth Jain, Matthew Cook, Jehoshua Bruck",
-    venue: "CLeaR 2025",
+    venue: "CLeaR",
     year: 2025,
   },
   {
     title: "Identification of Mixtures of Discrete Product Distributions in Near-Optimal Sample and Time Complexity",
     authors: "Spencer Gordon, Eric Jahn, Bijan Mazaheri, Yuval Rabani, Leonard J Schulman",
-    venue: "COLT 2024",
+    venue: "COLT",
     year: 2024,
   },
   {
     title: "Causal Information Splitting: Engineering Proxy Features for Robustness to Distribution Shifts",
     authors: "Bijan Mazaheri, Atalanti Mastakouri, Dominik Janzing, Michaela Hardt",
-    venue: "UAI 2023",
+    venue: "UAI",
     year: 2023,
   },
   {
     title: "Causal Inference Despite Limited Global Confounding via Mixture Models",
     authors: "Spencer Gordon, Bijan Mazaheri, Yuval Rabani, Leonard J Schulman",
-    venue: "CLeaR 2023",
+    venue: "CLeaR",
     year: 2023,
   },
   {
@@ -46,19 +45,19 @@ const PUBLICATIONS = [
   {
     title: "Expert Graphs: Synthesizing New Expertise via Collaboration",
     authors: "Bijan Mazaheri, Siddharth Jain, Jehoshua Bruck",
-    venue: "ISIT 2021",
+    venue: "ISIT",
     year: 2021,
   },
   {
     title: "Source Identification for Mixtures of Product Distributions",
     authors: "Spencer Gordon, Bijan Mazaheri, Yuval Rabani, Leonard Schulman",
-    venue: "COLT 2021",
+    venue: "COLT",
     year: 2021,
   },
   {
     title: "Robust Correction of Sampling Bias using Cumulative Distribution Functions",
     authors: "Bijan Mazaheri, Siddharth Jain, Jehoshua Bruck",
-    venue: "NeurIPS 2020",
+    venue: "NeurIPS",
     year: 2020,
   },
 ];
