@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FileText, ImageIcon, Video, Quote, Copy, Check } from "lucide-react";
+import { FileText, ImageIcon, Video, Copy, Check, SlidersHorizontal } from "lucide-react";
 
 // Lab members whose names should be bolded in author lists
 const LAB_MEMBERS = ["Bijan Mazaheri", "Sophia Xiao", "Zou Yang"];
