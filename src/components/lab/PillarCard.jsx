@@ -87,7 +87,7 @@ export default function PillarCard({ pillar, index }) {
                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                 className="overflow-hidden"
               >
-                <div className="pt-6 mt-6" style={{ borderTop: '1px solid var(--warm-gray)' }}>
+                <div className="pt-6 mt-6" style={{ borderTop: '1px solid var(--border)' }}>
                   <p 
                     className="text-xs font-semibold tracking-[0.2em] uppercase mb-4"
                     style={{ color: 'var(--cider)' }}

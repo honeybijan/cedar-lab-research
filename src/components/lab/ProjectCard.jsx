@@ -68,7 +68,7 @@ export default function ProjectCard({ project, index }) {
                 transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 className="overflow-hidden"
               >
-                <div className="pt-5 mt-4 ml-12" style={{ borderTop: '1px solid var(--warm-gray)' }}>
+                <div className="pt-5 mt-4 ml-12" style={{ borderTop: '1px solid var(--border)' }}>
                   {project.description ? (
                     <p 
                       className="text-sm leading-relaxed mb-4"
@@ -89,7 +89,7 @@ export default function ProjectCard({ project, index }) {
                     <div>
                       <p 
                         className="text-xs font-semibold tracking-[0.15em] uppercase mb-3"
-                        style={{ color: 'var(--dartmouth)' }}
+                        style={{ color: 'var(--dartmouth-light)' }}
                       >
                         Selected Papers
                       </p>
@@ -106,8 +106,8 @@ export default function ProjectCard({ project, index }) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-sm font-medium hover:underline transition-colors"
-                                style={{ color: 'var(--dartmouth)' }}
-                                onClick={(e) => e.stopPropagation()}
+                                style={{ color: 'var(--dartmouth-light)' }}
+                                         onClick={(e) => e.stopPropagation()}
                               >
                                 {paper.title}
                               </a>
