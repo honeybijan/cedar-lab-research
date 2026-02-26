@@ -16,14 +16,6 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="mb-8 flex justify-center">
-            <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/36605d6d2_Gemini_Generated_Image_wl2t7qwl2t7qwl2t.png"
-              alt="CEDAR Lab Logo"
-              className="h-40 w-auto"
-            />
-          </div>
-
           <div className="mb-6">
             <span className="inline-block text-xs font-medium tracking-[0.3em] uppercase px-4 py-2 rounded-full"
               style={{ color: '#3D9E6B', border: '1px solid rgba(61,158,107,0.35)', backgroundColor: 'rgba(0,105,62,0.08)' }}>
