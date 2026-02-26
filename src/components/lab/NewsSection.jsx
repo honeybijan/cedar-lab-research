@@ -17,6 +17,32 @@ const NEWS = [
   {
     date: "January 2026",
     title: "Prof. Bijan Mazaheri presented at the Tsinghua Sanya International Mathematics Forum in Sanya, China.",
+    description: 'Talk title: "Distribution-level Techniques for Heterogeneous Causal Relationships."',
+  },
+  {
+    date: "December 2025",
+    title: "CIDER Lab attended NeurIPS 2025 in San Diego.",
+    description: "Prof. Mazaheri presented at the CauScien Workshop and received a Top Reviewer Award.",
+  },
+  {
+    date: "September 2025",
+    title: "Sophia Xiao and Zou Yang join the CIDER Lab as PhD students.",
+    description: "Welcome to the group!",
+  },
+  {
+    date: "Summer 2025",
+    title: "Prof. Bijan Mazaheri gave invited talks at Dartmouth Medical School and Williams College Statistics Colloquium.",
+    description: 'Talk title: "Causal Underpinnings of Information Synthesis."',
+  },
+  {
+    date: "Summer 2025",
+    title: "Prof. Bijan Mazaheri gave an invited talk at the Tuck School of Business (Ops/MS Brown Bag Seminar).",
+    description: 'Talk title: "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
+  },
+  {
+    date: "February 2025",
+    title: "Prof. Bijan Mazaheri presented at the Boston University Machine Learning Symposium.",
+    description: 'Talk title: "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
   },
   {
     date: "January 2025",
