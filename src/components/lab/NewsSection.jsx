@@ -45,13 +45,13 @@ const NEWS = [
   },
   {
     date: "May 2025",
-    title: "CIDER Lab attended AISTATS 2025.",
-    description: 'Prof. Mazaheri presented "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
+    title: "CIDER Lab attended CLeaR 2025.",
+    description: 'Prof. Mazaheri presented "Omitted Labels Induce Nontransitive Paradoxes in Causality."',
   },
   {
     date: "May 2025",
-    title: "CIDER Lab attended CLeaR 2025.",
-    description: 'Prof. Mazaheri presented "Omitted Labels Induce Nontransitive Paradoxes in Causality."',
+    title: "CIDER Lab attended AISTATS 2025.",
+    description: 'Prof. Mazaheri presented "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
   },
   {
     date: "February 2025",
