@@ -4,7 +4,6 @@ import PillarCard from "./PillarCard";
 
 const PILLARS = [
   {
-    letter: "C",
     title: "Detection",
     subtitle: "Unmasking causal heterogeneity and obscured stories in mixture models.",
     questions: [
@@ -15,7 +14,6 @@ const PILLARS = [
     ],
   },
   {
-    letter: "I",
     title: "Experimentation",
     subtitle: "Theoretical design of optimal and efficient perturbations for system discovery.",
     questions: [
@@ -26,7 +24,6 @@ const PILLARS = [
     ],
   },
   {
-    letter: "D",
     title: "Recourse",
     subtitle: "Counterfactual frameworks for AI fairness, privacy, and model-sharing.",
     questions: [
@@ -37,18 +34,6 @@ const PILLARS = [
     ],
   },
   {
-    letter: "E",
-    title: "Fundamentals",
-    subtitle: "Establishing the universal limits of causal information recovery.",
-    questions: [
-      "What are the information-theoretic lower bounds for causal discovery?",
-      "When is causal structure identifiable from observational data alone?",
-      "How do computational constraints interact with statistical limits in causal inference?",
-      "What role does the faithfulness assumption play in practical causal discovery?",
-    ],
-  },
-  {
-    letter: "R",
     title: "Synthesis",
     subtitle: "Comparing and correcting for batch effects across disparate data sources.",
     questions: [
@@ -56,6 +41,16 @@ const PILLARS = [
       "What methods reliably correct for batch effects without distorting causal signal?",
       "When can data from different experimental conditions be safely combined?",
       "How do we detect and handle conflicting causal evidence across sources?",
+    ],
+  },
+  {
+    title: "Fundamentals",
+    subtitle: "Establishing the universal limits of causal information recovery.",
+    questions: [
+      "What are the information-theoretic lower bounds for causal discovery?",
+      "When is causal structure identifiable from observational data alone?",
+      "How do computational constraints interact with statistical limits in causal inference?",
+      "What role does the faithfulness assumption play in practical causal discovery?",
     ],
   },
 ];
@@ -83,7 +78,7 @@ export default function PillarsSection() {
 
         <div className="space-y-4">
           {PILLARS.map((pillar, index) => (
-            <PillarCard key={pillar.letter} pillar={pillar} index={index} />
+            <PillarCard key={pillar.title} pillar={pillar} index={index} />
           ))}
         </div>
       </div>
