@@ -35,12 +35,26 @@ const NEWS = [
     description: "We have been awarded a $248,000 contract for the DARPA program on Critical Orientation of Mathematics to Produce Advancements in Science and Security (COMPASS).",
   },
   {
-    date: "Spring 2025",
+    date: "November 2025",
+    title: "Prof. Bijan Mazaheri will serve as Program Chair of CLeaR 2026.",
+  },
+  {
+    date: "November 2025",
     title: "Prof. Bijan Mazaheri gave an invited talk at Williams College.",
     description: 'Talk title: "Causal Underpinnings of Information Synthesis."',
   },
   {
-    date: "Spring 2025",
+    date: "May 2025",
+    title: "CIDER Lab attended AISTATS 2025.",
+    description: 'Prof. Mazaheri presented "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
+  },
+  {
+    date: "May 2025",
+    title: "CIDER Lab attended CLeaR 2025.",
+    description: 'Prof. Mazaheri presented "Omitted Labels Induce Nontransitive Paradoxes in Causality."',
+  },
+  {
+    date: "February 2025",
     title: "Prof. Bijan Mazaheri gave an invited talk at Tuck School of Business at Dartmouth.",
     description: 'Talk title: "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
   },
