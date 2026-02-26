@@ -90,6 +90,12 @@ const PREPRINTS = [
     paper: "https://arxiv.org/abs/2602.08461",
   },
   {
+    title: "Masking Unfairness: Hiding Causality in Zero ATE",
+    authors: "Zou Yang, Sophia Xiao, Bijan Mazaheri",
+    venue: "Under Review",
+    year: 2026,
+  },
+  {
     title: "Data Augmentation via Causal Residual Bootstrapping",
     authors: "Mateusz Gajewski, Sophia Xiao, Bijan Mazaheri",
     venue: "Under Review",
