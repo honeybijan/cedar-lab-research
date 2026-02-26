@@ -13,6 +13,11 @@ const NEWS = [
     description: 'Talk title: "Distribution-level Techniques for Heterogeneous Causal Relationships."',
   },
   {
+    date: "January 2026",
+    title: "Muhammad Ahmad joins the CEDAR Lab.",
+    description: "Muhammad has been awarded a Dartmouth FYRE grant to support his research with the lab. Welcome!",
+  },
+  {
     date: "December 2025",
     title: "Ben Cavanagh joins the CEDAR Lab.",
     description: "Welcome to the group!",
@@ -85,16 +90,11 @@ const NEWS = [
     description: 'Talk title: "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
   },
   {
-    date: "January 2026",
-    title: "Muhammad Ahmad joins the CEDAR Lab.",
-    description: "Muhammad has been awarded a Dartmouth FYRE grant to support his research with the lab. Welcome!",
-  },
-  {
     date: "January 2025",
     title: "CEDAR Lab launches at Dartmouth's Thayer School of Engineering.",
     description: "Prof. Bijan Mazaheri joins Dartmouth as an Assistant Professor, founding the Causal Inference, Discovery, and Experimental Reasoning (CEDAR) Lab.",
   },
-];
+  ];
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function NewsSection() {
