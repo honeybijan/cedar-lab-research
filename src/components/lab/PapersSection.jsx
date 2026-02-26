@@ -102,24 +102,28 @@ const PREPRINTS = [
     authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
     venue: "arXiv:2504.12594, Under Review",
     year: 2025,
+    paper: "https://arxiv.org/abs/2504.12594",
   },
   {
     title: "Causal Discovery under Latent Class Confounding",
     authors: "Bijan Mazaheri, Spencer Gordon, Yuval Rabani, Leonard Schulman",
     venue: "arXiv:2311.07454, Under Review",
     year: 2025,
+    paper: "https://arxiv.org/abs/2311.07454",
   },
   {
     title: "The Sparse Hausdorff Moment Problem, with Application to Topic Models",
     authors: "Spencer Gordon, Bijan Mazaheri, Yuval Rabani, Leonard J Schulman",
     venue: "arXiv:2007.08101",
     year: 2020,
+    paper: "https://arxiv.org/abs/2007.08101",
   },
   {
     title: "Cancer Classification from Healthy DNA using Machine Learning",
     authors: "Siddharth Jain, Bijan Mazaheri, Netanel Raviv, Jehoshua Bruck",
     venue: "BioRxiv",
     year: 2019,
+    paper: "https://www.biorxiv.org/content/10.1101/517839",
   },
   {
     title: "Short Tandem Repeats Information in TCGA is Statistically Biased by Amplification",
