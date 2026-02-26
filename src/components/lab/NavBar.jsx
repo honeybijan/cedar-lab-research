@@ -31,15 +31,10 @@ export default function NavBar() {
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="flex-shrink-0 transition-opacity hover:opacity-70"
+          className="flex-shrink-0 text-sm font-semibold tracking-wide transition-opacity hover:opacity-70"
+          style={{ color: '#3D9E6B' }}
         >
-          <div className="h-12 w-12 overflow-hidden">
-            <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/cd12e2cf3_Gemini_Generated_Image_nszczynszczynszc.png"
-              alt="CEDAR Lab"
-              className="h-full w-full object-cover object-center"
-            />
-          </div>
+          CEDAR Lab
         </button>
 
         <div className="hidden sm:flex items-center flex-wrap justify-end">
