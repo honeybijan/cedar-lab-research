@@ -84,7 +84,7 @@ const PUBLICATIONS = [
 const PREPRINTS = [
   {
     title: "Estimating Aleatoric Uncertainty in the Causal Treatment Effect",
-    authors: "Lihuan Xu, Bijan Mazaheri",
+    authors: "Liyuan Xu, Bijan Mazaheri",
     venue: "Under Review",
     year: 2026,
     paper: "https://arxiv.org/abs/2602.08461",
