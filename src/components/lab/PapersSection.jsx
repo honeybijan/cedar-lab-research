@@ -87,6 +87,7 @@ const PREPRINTS = [
     authors: "Lihuan Xu, Bijan Mazaheri",
     venue: "Under Review",
     year: 2026,
+    paper: "https://arxiv.org/abs/2602.08461",
   },
   {
     title: "Data Augmentation via Causal Residual Bootstrapping",
