@@ -15,6 +15,15 @@ const NEWS = [
     description: "Prof. Mazaheri presented at the CauScien Workshop and received a Top Reviewer Award.",
   },
   {
+    date: "November 2025",
+    title: "Prof. Bijan Mazaheri will serve as Program Chair of CLeaR 2026.",
+  },
+  {
+    date: "November 2025",
+    title: "Prof. Bijan Mazaheri gave an invited talk at Williams College.",
+    description: 'Talk title: "Causal Underpinnings of Information Synthesis."',
+  },
+  {
     date: "October 2025",
     title: "CIDER Lab awarded DIMEX grant.",
     description: "We have been awarded a grant through Dartmouth's DIMEX program to build collaborations between Dartmouth researchers and researchers in the Middle East and North Africa.",
@@ -35,13 +44,9 @@ const NEWS = [
     description: "We have been awarded a $248,000 contract for the DARPA program on Critical Orientation of Mathematics to Produce Advancements in Science and Security (COMPASS).",
   },
   {
-    date: "November 2025",
-    title: "Prof. Bijan Mazaheri will serve as Program Chair of CLeaR 2026.",
-  },
-  {
-    date: "November 2025",
-    title: "Prof. Bijan Mazaheri gave an invited talk at Williams College.",
-    description: 'Talk title: "Causal Underpinnings of Information Synthesis."',
+    date: "June 2025",
+    title: "Tamier Baoyin and Leila Salken join the CIDER Lab for the summer.",
+    description: "Welcome! Tamier is affiliated with Dartmouth and Mount Holyoke College, and Leila is from Williams College.",
   },
   {
     date: "May 2025",
