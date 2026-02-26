@@ -83,10 +83,11 @@ export default function ProjectCard({ project, index }) {
                               {paper.authors && (
                                 <p className="text-xs mt-0.5" style={{ color: '#A09080' }}>
                                   {paper.authors.split(", ").map((author, idx) => {
-                                    const isMember = LAB_MEMBERS.some(m => author.includes(m));
+                                    const isMember = LAB_MEMBERS.some(m => author.replace(/\*/, "").includes(m));
+                                    const displayAuthor = author;
                                     return (
                                       <span key={idx}>
-                                        {isMember ? <strong style={{ color: '#C8BAA8' }}>{author}</strong> : author}
+                                        {isMember ? <strong style={{ color: '#C8BAA8' }}>{displayAuthor}</strong> : displayAuthor}
                                         {idx < paper.authors.split(", ").length - 1 ? ", " : ""}
                                       </span>
                                     );
