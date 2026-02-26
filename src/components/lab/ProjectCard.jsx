@@ -15,8 +15,8 @@ export default function ProjectCard({ project, index }) {
       <div
         className="group relative rounded-xl border transition-all duration-400 cursor-pointer overflow-hidden"
         style={{
-          borderColor: isExpanded ? 'var(--cider)' : 'var(--warm-gray)',
-          backgroundColor: isExpanded ? 'rgba(139, 94, 60, 0.02)' : 'white',
+          borderColor: isExpanded ? 'var(--cider)' : 'var(--border)',
+          backgroundColor: isExpanded ? 'var(--bg-card-hover)' : 'var(--bg-card)',
         }}
         onClick={() => setIsExpanded(!isExpanded)}
       >
@@ -36,8 +36,8 @@ export default function ProjectCard({ project, index }) {
               <div 
                 className="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-semibold flex-shrink-0 transition-all duration-300"
                 style={{ 
-                  backgroundColor: isExpanded ? 'rgba(0, 105, 62, 0.1)' : 'var(--cream)',
-                  color: isExpanded ? 'var(--dartmouth)' : 'var(--cider)',
+                  backgroundColor: isExpanded ? 'rgba(0, 105, 62, 0.12)' : 'var(--border)',
+                  color: isExpanded ? 'var(--dartmouth-light)' : 'var(--cider-light)',
                 }}
               >
                 {String(index + 1).padStart(2, '0')}

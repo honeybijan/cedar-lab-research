@@ -28,7 +28,7 @@ export default function ProjectsSection() {
   });
 
   return (
-    <section id="projects" className="py-24 sm:py-32 px-6" style={{ backgroundColor: 'var(--cream)' }}>
+    <section id="projects" className="py-24 sm:py-32 px-6" style={{ backgroundColor: 'var(--bg-deep)' }}>
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -39,7 +39,7 @@ export default function ProjectsSection() {
         >
           <span 
             className="text-xs font-semibold tracking-[0.3em] uppercase"
-            style={{ color: 'var(--dartmouth)' }}
+            style={{ color: 'var(--dartmouth-light)' }}
           >
             Current Work
           </span>
@@ -48,9 +48,9 @@ export default function ProjectsSection() {
             style={{ color: 'var(--text-primary)' }}
           >
             Active{" "}
-            <span className="font-semibold" style={{ color: 'var(--cider-dark)' }}>Projects</span>
+            <span className="font-semibold" style={{ color: 'var(--cider-light)' }}>Projects</span>
           </h2>
-          <div className="w-12 h-[1px] mx-auto mt-6" style={{ background: 'var(--dartmouth-light)' }} />
+          <div className="w-12 h-[1px] mx-auto mt-6" style={{ background: 'var(--border-light)' }} />
         </motion.div>
 
         <div className="space-y-3">

@@ -62,7 +62,7 @@ const PILLARS = [
 
 export default function PillarsSection() {
   return (
-    <section id="pillars" className="py-24 sm:py-32 px-6">
+    <section id="pillars" className="py-24 sm:py-32 px-6" style={{ backgroundColor: 'var(--bg-mid)' }}>
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ export default function PillarsSection() {
         >
           <span 
             className="text-xs font-semibold tracking-[0.3em] uppercase"
-            style={{ color: 'var(--cider)' }}
+            style={{ color: 'var(--cider-light)' }}
           >
             Research Pillars
           </span>
@@ -82,9 +82,9 @@ export default function PillarsSection() {
             style={{ color: 'var(--text-primary)' }}
           >
             Five Pillars of{" "}
-            <span className="font-semibold" style={{ color: 'var(--dartmouth)' }}>CIDER</span>
+            <span className="font-semibold" style={{ color: 'var(--dartmouth-light)' }}>CIDER</span>
           </h2>
-          <div className="w-12 h-[1px] mx-auto mt-6" style={{ background: 'var(--cider-light)' }} />
+          <div className="w-12 h-[1px] mx-auto mt-6" style={{ background: 'var(--border-light)' }} />
         </motion.div>
 
         <div className="space-y-4">

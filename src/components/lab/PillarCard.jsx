@@ -23,8 +23,8 @@ export default function PillarCard({ pillar, index }) {
       <div
         className="group relative rounded-2xl border transition-all duration-500 cursor-pointer overflow-hidden"
         style={{
-          borderColor: isExpanded ? 'var(--dartmouth)' : 'var(--warm-gray)',
-          backgroundColor: isExpanded ? 'rgba(0, 105, 62, 0.02)' : 'white',
+          borderColor: isExpanded ? 'var(--dartmouth)' : 'var(--border)',
+          backgroundColor: isExpanded ? 'var(--bg-card-hover)' : 'var(--bg-card)',
         }}
         onClick={() => setIsExpanded(!isExpanded)}
         onMouseEnter={() => !isExpanded && setIsExpanded(true)}
