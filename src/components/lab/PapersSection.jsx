@@ -45,7 +45,7 @@ const PUBLICATIONS = [
   },
   {
     title: "Causal Inference Despite Limited Global Confounding via Mixture Models",
-    authors: "Spencer Gordon, Bijan Mazaheri, Yuval Rabani, Leonard J Schulman",
+    authors: "Spencer Gordon, Bijan Mazaheri*, Yuval Rabani, Leonard J Schulman",
     venue: "CLeaR",
     year: 2023,
     paper: "https://arxiv.org/abs/2112.11602",
@@ -67,7 +67,7 @@ const PUBLICATIONS = [
   },
   {
     title: "Source Identification for Mixtures of Product Distributions",
-    authors: "Spencer Gordon, Bijan Mazaheri, Yuval Rabani, Leonard Schulman",
+    authors: "Spencer Gordon, Bijan Mazaheri*, Yuval Rabani, Leonard Schulman",
     venue: "COLT",
     year: 2021,
     paper: "http://proceedings.mlr.press/v134/gordon21a/gordon21a.pdf",
@@ -123,7 +123,7 @@ const PREPRINTS = [
   },
   {
     title: "The Sparse Hausdorff Moment Problem, with Application to Topic Models",
-    authors: "Spencer Gordon, Bijan Mazaheri, Yuval Rabani, Leonard J Schulman",
+    authors: "Spencer Gordon, Bijan Mazaheri*, Yuval Rabani, Leonard J Schulman",
     venue: "arXiv:2007.08101",
     year: 2020,
     paper: "https://arxiv.org/abs/2007.08101",
