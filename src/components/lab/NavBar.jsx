@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const NAV_ITEMS = [
+  { label: "Projects", id: "projects" },
   { label: "People", id: "people" },
-  { label: "Current Projects", id: "projects" },
   { label: "Papers", id: "papers" },
   { label: "News", id: "news" },
   { label: "Funding", id: "funding" },
