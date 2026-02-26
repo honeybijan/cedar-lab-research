@@ -32,10 +32,6 @@ export default function NavBar() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex-shrink-0 transition-opacity hover:opacity-70"
-          style={{
-            mask: 'radial-gradient(ellipse 70% 70% at 50% 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 85%)',
-            WebkitMask: 'radial-gradient(ellipse 70% 70% at 50% 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 85%)',
-          }}
         >
           <img 
             src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/03c24788a_CEDAR_LOGO.png"
