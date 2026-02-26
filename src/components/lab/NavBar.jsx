@@ -33,8 +33,8 @@ export default function NavBar() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex-shrink-0 transition-opacity hover:opacity-70"
           style={{
-            mask: 'radial-gradient(ellipse 85% 85% at 50% 50%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
-            WebkitMask: 'radial-gradient(ellipse 85% 85% at 50% 50%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
+            mask: 'radial-gradient(ellipse 70% 70% at 50% 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 85%)',
+            WebkitMask: 'radial-gradient(ellipse 70% 70% at 50% 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 85%)',
           }}
         >
           <img 
