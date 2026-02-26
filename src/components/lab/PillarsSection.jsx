@@ -36,7 +36,7 @@ const PILLARS = [
     questions: [
       "How can we disentangle experimental artifacts from true scientific signal?",
       "What methods reliably correct for batch effects without distorting causal structure?",
-      "How do we detect and resolve conflicting causal evidence across heterogeneous sources?",
+      "How do we quantify human performance in highly variable environments?",
     ],
   },
   {
