@@ -215,13 +215,13 @@ export default function PeopleSection() {
             <EmptyState label="Collaborators to be added." />
           ) : (
             <div className="grid sm:grid-cols-2 gap-4">
-              {COLLABORATORS.map((c, i) => (
-                <div key={i} className="rounded-xl border p-5" style={{ borderColor: '#2E2820', backgroundColor: '#181510' }}>
-                  <p className="font-medium" style={{ color: '#F0EAE0' }}>{c.name}</p>
-                  {c.affiliation && <p className="text-sm mt-1" style={{ color: '#A09080' }}>{c.affiliation}</p>}
-                </div>
-              ))}
-            </div>
+               {COLLABORATORS.map((c, i) => (
+                 <a key={i} href={c.url} target="_blank" rel="noopener noreferrer" className="rounded-xl border p-5 transition-colors hover:opacity-80" style={{ borderColor: '#2E2820', backgroundColor: '#181510' }}>
+                   <p className="font-medium" style={{ color: '#F0EAE0' }}>{c.name}</p>
+                   {c.affiliation && <p className="text-sm mt-1" style={{ color: '#A09080' }}>{c.affiliation}</p>}
+                 </a>
+               ))}
+             </div>
           )}
         </motion.div>
       </div>
