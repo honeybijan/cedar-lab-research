@@ -30,6 +30,13 @@ const PROGRAMS = [
 ];
 
 export default function JoinUsSection() {
+  const [clickedIndex, setClickedIndex] = useState(null);
+
+  const handleCardClick = (e, index) => {
+    e.preventDefault();
+    setClickedIndex(clickedIndex === index ? null : index);
+  };
+
   return (
     <section id="contact" className="py-24 sm:py-32 px-6" style={{ backgroundColor: '#181510' }}>
       <div className="max-w-4xl mx-auto">
