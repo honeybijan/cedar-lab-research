@@ -32,9 +32,13 @@ export default function NavBar() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex-shrink-0 transition-opacity hover:opacity-70"
+          style={{
+            mask: 'linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)',
+            WebkitMask: 'linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)',
+          }}
         >
           <img 
-            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/93ecf8e63_Gemini_Generated_Image_ofhe53ofhe53ofhe.png"
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/03c24788a_CEDAR_LOGO.png"
             alt="CEDAR Lab"
             className="h-12 object-contain"
           />
