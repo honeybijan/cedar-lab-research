@@ -8,7 +8,7 @@ const DEFAULT_PROJECTS = [
   { title: "Heterogeneity Detection", order: 1 },
   { title: "Causal Masking", order: 2 },
   { title: "Optimal Interventions", order: 3 },
-  { title: "Integrating and Disentangling Data", order: 4 },
+  { title: "Signal Disentanglement", order: 4 },
   { title: "Protecting Information", order: 5 },
 ];
 
