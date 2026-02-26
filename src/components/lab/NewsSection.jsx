@@ -75,6 +75,11 @@ const NEWS = [
   },
   {
     date: "January 2025",
+    title: "Muhammad Ahmad joins the CIDER Lab.",
+    description: "Muhammad has been awarded a Dartmouth FYRE grant to support his research with the lab. Welcome!",
+  },
+  {
+    date: "January 2025",
     title: "CIDER Lab launches at Dartmouth's Thayer School of Engineering.",
     description: "Prof. Bijan Mazaheri joins Dartmouth as an Assistant Professor, founding the Causal Inference, Discovery, and Experimental Reasoning (CIDER) Lab.",
   },
