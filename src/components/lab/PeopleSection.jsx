@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Mail, BookOpen, Github, Linkedin, FileText } from "lucide-react";
 
 const PI = {
   name: "Prof. Bijan Mazaheri",
