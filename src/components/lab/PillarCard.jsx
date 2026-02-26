@@ -21,8 +21,8 @@ export default function PillarCard({ pillar, index }) {
           borderColor: isExpanded ? accent : '#2E2820',
           backgroundColor: isExpanded ? '#1F1B13' : '#181510',
         }}
-        onClick={() => setIsExpanded(!isExpanded)}
-        onMouseEnter={() => !isExpanded && setIsExpanded(true)}
+        onMouseEnter={() => setIsExpanded(true)}
+        onMouseLeave={() => setIsExpanded(false)}
       >
         <div className="absolute top-0 left-0 right-0 h-[2px] transition-opacity duration-500"
           style={{ background: `linear-gradient(90deg, ${accent}, transparent)`, opacity: isExpanded ? 1 : 0 }} />
@@ -30,10 +30,8 @@ export default function PillarCard({ pillar, index }) {
         <div className="p-6 sm:p-8">
           <div className="flex items-start justify-between gap-4">
             <div className="flex items-start gap-4 sm:gap-5">
-              <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center text-xl sm:text-2xl font-semibold"
-                style={{ backgroundColor: `${accent}22`, color: accent }}>
-                {pillar.letter}
-              </div>
+              <div className="flex-shrink-0 w-3 h-3 rounded-full mt-2"
+                style={{ backgroundColor: accent }} />
               <div className="flex-1 min-w-0">
                 <h3 className="text-lg sm:text-xl font-medium tracking-tight" style={{ color: '#F0EAE0' }}>
                   {pillar.title}
