@@ -61,7 +61,7 @@ export default function PillarCard({ pillar, index }) {
           </div>
 
           <AnimatePresence>
-            {isExpanded && (
+            {(isExpanded || isLocked) && (
               <motion.div
                 initial={{ height: 0, opacity: 0 }}
                 animate={{ height: "auto", opacity: 1 }}
