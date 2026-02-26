@@ -34,7 +34,7 @@ export default function NavBar() {
           className="flex-shrink-0 transition-opacity hover:opacity-70"
         >
           <img 
-            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/e5e99dffc_Gemini_Generated_Image_qgk9hpqgk9hpqgk91.png"
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/93ecf8e63_Gemini_Generated_Image_ofhe53ofhe53ofhe.png"
             alt="CEDAR Lab"
             className="h-12 object-contain"
           />
