@@ -230,6 +230,9 @@ function PaperCard({ paper, index }) {
 }
 
 function PaperGroup({ title, papers }) {
+  const [expanded, setExpanded] = useState(false);
+  const visible = expanded ? papers : papers.slice(0, PREVIEW_COUNT);
+
   return (
     <div className="mb-16">
       <p className="text-xs font-semibold tracking-[0.25em] uppercase mb-6" style={{ color: '#D9A578' }}>
@@ -238,9 +241,24 @@ function PaperGroup({ title, papers }) {
       {papers.length === 0 ? (
         <p className="text-sm italic" style={{ color: '#5A4E42' }}>Papers to be added.</p>
       ) : (
-        <div className="space-y-4">
-          {papers.map((paper, i) => <PaperCard key={i} paper={paper} index={i} />)}
-        </div>
+        <>
+          <div className="space-y-4">
+            {visible.map((paper, i) => <PaperCard key={i} paper={paper} index={i} />)}
+          </div>
+          {papers.length > PREVIEW_COUNT && (
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="mt-6 flex items-center gap-2 text-xs font-medium transition-opacity hover:opacity-70"
+              style={{ color: '#D9A578' }}
+            >
+              {expanded ? (
+                <><ChevronUp className="w-4 h-4" /> Show less</>
+              ) : (
+                <><ChevronDown className="w-4 h-4" /> Show all {papers.length} papers</>
+              )}
+            </button>
+          )}
+        </>
       )}
     </div>
   );
