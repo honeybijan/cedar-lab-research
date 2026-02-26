@@ -69,7 +69,7 @@ export default function ProjectCard({ project, index }) {
                         Selected Papers
                       </p>
                       <ul className="space-y-2">
-                        {project.papers.map((paper, i) => (
+                        {[...project.papers].sort((a, b) => (b.year || 0) - (a.year || 0)).map((paper, i) => (
                           <li key={i} className="flex items-start gap-2.5">
                             <FileText className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" style={{ color: '#D9A578' }} />
                             <div>
