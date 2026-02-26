@@ -7,18 +7,18 @@ const PILLARS = [
     title: "Discovery",
     subtitle: "Unmasking causal heterogeneity and obscured stories in mixture models.",
     questions: [
-      "How can we detect and quantify heterogeneous settings to identify bad actors or emerging diseases?",
-      "When do causal mixture models reveal — or conceal — the true source of our information?",
-      "What distinguishes measuring aggregate rates of AI use, crime, or corruption from characterizing individuals?",
+      "How can we detect and quantify heterogeneous populations to identify bad actors or emerging diseases?",
+      "When do causal mixture models reveal — or obscure — the true source of an observed signal?",
+      "What distinguishes population-level rates of AI use, crime, or corruption from individual-level attribution?",
     ],
   },
   {
     title: "Experimentation",
     subtitle: "Theoretical design of optimal and efficient perturbations for system discovery.",
     questions: [
-      "How should experiments be sequenced to maximize information gain?",
-      "What is the most effective way to perturb a system to uncover its causal dependencies?",
-      "Must we know whether an intervention succeeded, or is the attempt itself informative?",
+      "How should experiments be sequenced to maximize causal information gain?",
+      "What perturbations most efficiently expose a system's underlying causal dependencies?",
+      "Does successful intervention require confirmation of effect, or is the act of intervening itself informative?",
     ],
   },
   {
@@ -26,26 +26,26 @@ const PILLARS = [
     subtitle: "Counterfactual frameworks for AI fairness, privacy, and model-sharing.",
     questions: [
       "What counterfactual guarantees can we provide for algorithmic fairness?",
-      "How do we address the reproducibility crisis without exposing private data or proprietary models?",
-      "Can recourse mechanisms be designed to remain robust as models evolve?",
+      "How can we address the reproducibility crisis without exposing private data or proprietary models?",
+      "Can recourse mechanisms be designed to remain valid under model updates?",
     ],
   },
   {
     title: "Synthesis",
     subtitle: "Comparing and correcting for batch effects across disparate data sources.",
     questions: [
-      "How do we disentangle the effects of experimental conditions from genuine scientific signal?",
+      "How can we disentangle experimental artifacts from true scientific signal?",
       "What methods reliably correct for batch effects without distorting causal structure?",
-      "How do we detect and reconcile conflicting evidence across heterogeneous sources?",
+      "How do we detect and resolve conflicting causal evidence across heterogeneous sources?",
     ],
   },
   {
     title: "Fundamentals",
     subtitle: "Establishing the universal limits of causal information recovery.",
     questions: [
-      "When can we — and when can't we — learn causality, and what does this reveal about science and economics?",
-      "How do errors across different causal questions co-occur and interact?",
-      "What are the information-theoretic limits of detecting causal relationships, and how can they be exploited?",
+      "When can — and when can't — we learn causality, and what does this reveal about the limits of science and economics?",
+      "How do errors across distinct causal questions co-occur and interact?",
+      "What are the information-theoretic limits of causal discovery, and how can they be strategically exploited?",
     ],
   },
 ];
