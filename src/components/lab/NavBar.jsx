@@ -7,7 +7,7 @@ const NAV_ITEMS = [
   { label: "Papers", id: "papers" },
   { label: "News", id: "news" },
   { label: "Funding", id: "funding" },
-  { label: "Contact", id: "contact" },
+  { label: "Join Us", id: "contact" },
 ];
 
 export default function NavBar() {
