@@ -33,11 +33,11 @@ export default function NavBar() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex-shrink-0 transition-opacity hover:opacity-70"
         >
-          <div className="h-14 w-14 overflow-hidden" style={{ clipPath: 'inset(0 15% 55% 15%)' }}>
+          <div className="h-12 overflow-hidden" style={{ clipPath: 'inset(18% 5% 18% 5%)' }}>
             <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/36605d6d2_Gemini_Generated_Image_wl2t7qwl2t7qwl2t.png"
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/d93d70073_Gemini_Generated_Image_qgk9hpqgk9hpqgk91.png"
               alt="CEDAR Lab"
-              className="h-full w-full object-cover object-center"
+              className="h-full object-cover object-center"
             />
           </div>
         </button>
