@@ -4,32 +4,29 @@ import PillarCard from "./PillarCard";
 
 const PILLARS = [
   {
-    title: "Detection",
+    title: "Discovery",
     subtitle: "Unmasking causal heterogeneity and obscured stories in mixture models.",
     questions: [
-      "How can we detect latent subpopulations within heterogeneous datasets?",
-      "What are the statistical signatures of hidden causal mechanisms?",
-      "When can mixture models reveal — or conceal — the true data-generating process?",
-      "How do we quantify uncertainty when causal structures vary across contexts?",
+      "How can we detect and quantify heterogeneous settings to identify bad actors or emerging diseases?",
+      "When and how can causal mixtures reveal — or conceal — where I am getting my information?",
+      "What is the difference between identifying rates of AI usage, crime, and corruption verses individual characterization?",
     ],
   },
   {
     title: "Experimentation",
     subtitle: "Theoretical design of optimal and efficient perturbations for system discovery.",
     questions: [
-      "What is the minimum number of interventions needed to fully identify a causal graph?",
       "How should experiments be sequenced to maximize information gain?",
-      "Can we design perturbations that are both cost-efficient and statistically powerful?",
-      "What role does adaptivity play in reducing experimental burden?",
+      "What is the best way to perturb a system to learn about its causal dependencies?",
+      "Do we need to know when we succeed in an intervention, or is trying enough?",
     ],
   },
   {
     title: "Recourse",
     subtitle: "Counterfactual frameworks for AI fairness, privacy, and model-sharing.",
     questions: [
-      "How can individuals obtain actionable explanations from black-box AI decisions?",
       "What counterfactual guarantees can we provide for algorithmic fairness?",
-      "How do we balance recourse with model privacy and intellectual property?",
+      "How do we solve the reproducibility crisis without sharing private information or company secrets?",
       "Can we design recourse mechanisms that are robust to model updates?",
     ],
   },
@@ -37,20 +34,18 @@ const PILLARS = [
     title: "Synthesis",
     subtitle: "Comparing and correcting for batch effects across disparate data sources.",
     questions: [
-      "How can we integrate causal knowledge from multiple heterogeneous datasets?",
+      "How can we disentangle information from experimental conditions from scientific information?",
       "What methods reliably correct for batch effects without distorting causal signal?",
-      "When can data from different experimental conditions be safely combined?",
-      "How do we detect and handle conflicting causal evidence across sources?",
+      "How do we detect and handle conflicting evidence across sources?",
     ],
   },
   {
     title: "Fundamentals",
     subtitle: "Establishing the universal limits of causal information recovery.",
     questions: [
-      "What are the information-theoretic lower bounds for causal discovery?",
-      "When is causal structure identifiable from observational data alone?",
-      "How do computational constraints interact with statistical limits in causal inference?",
-      "What role does the faithfulness assumption play in practical causal discovery?",
+      "When can we and cant we learn causality and what does this tell us about the state of science economics?",
+      "How do the errors within different causal questions co-occur and interact?",
+      "What are the information theoretical limitations of detecting causal relationships and how can they be exploited?",
     ],
   },
 ];
