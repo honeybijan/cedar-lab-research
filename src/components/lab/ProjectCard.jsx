@@ -51,7 +51,11 @@ export default function ProjectCard({ project, index }) {
                 <div className="pt-5 mt-4 ml-12" style={{ borderTop: '1px solid #2E2820' }}>
                   {project.description ? (
                     <p className="text-sm leading-relaxed mb-4" style={{ color: '#C8BAA8' }}>
-                      {project.description}
+                      {project.description.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+                        part.startsWith('**') && part.endsWith('**')
+                          ? <strong key={i} style={{ color: '#F0EAE0' }}>{part.slice(2, -2)}</strong>
+                          : part
+                      )}
                     </p>
                   ) : (
                     <p className="text-sm italic mb-4" style={{ color: '#7A6E62' }}>
