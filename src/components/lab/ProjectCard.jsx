@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight, FileText, Code2 } from "lucide-react";
 
+const LAB_MEMBERS = ["Bijan Mazaheri"];
+
 export default function ProjectCard({ project, index }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -80,7 +82,15 @@ export default function ProjectCard({ project, index }) {
                               </a>
                               {paper.authors && (
                                 <p className="text-xs mt-0.5" style={{ color: '#A09080' }}>
-                                  {paper.authors}
+                                  {paper.authors.split(", ").map((author, idx) => {
+                                    const isMember = LAB_MEMBERS.some(m => author.includes(m));
+                                    return (
+                                      <span key={idx}>
+                                        {isMember ? <strong style={{ color: '#C8BAA8' }}>{author}</strong> : author}
+                                        {idx < paper.authors.split(", ").length - 1 ? ", " : ""}
+                                      </span>
+                                    );
+                                  })}
                                   {paper.venue && <span> · {paper.venue}</span>}
                                   {paper.year && <span> ({paper.year})</span>}
                                 </p>
