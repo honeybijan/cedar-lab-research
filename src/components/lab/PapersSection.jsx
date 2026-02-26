@@ -7,27 +7,111 @@ import { FileText, ImageIcon, Video, Quote, Copy, Check } from "lucide-react";
 // Optional links: paper (url), poster (url), talk (url), cite (bibtex string)
 
 const PUBLICATIONS = [
-  // {
-  //   title: "Your Paper Title",
-  //   authors: "Author A, Author B, Author C",
-  //   venue: "Conference / Journal Name",
-  //   year: 2024,
-  //   paper: "https://arxiv.org/abs/...",
-  //   poster: "https://...",
-  //   talk: "https://...",
-  //   cite: `@inproceedings{...,\n  title={...},\n  author={...},\n  year={2024}\n}`,
-  // },
+  {
+    title: "Synthetic Potential Outcomes and Causal Mixture Identifiability",
+    authors: "Bijan Mazaheri, Chandler Squires, Caroline Uhler",
+    venue: "AISTATS 2025",
+    year: 2025,
+  },
+  {
+    title: "Omitted Labels Induce Nontransitive Paradoxes in Causality",
+    authors: "Bijan Mazaheri, Siddharth Jain, Matthew Cook, Jehoshua Bruck",
+    venue: "CLeaR 2025",
+    year: 2025,
+  },
+  {
+    title: "Identification of Mixtures of Discrete Product Distributions in Near-Optimal Sample and Time Complexity",
+    authors: "Spencer Gordon, Eric Jahn, Bijan Mazaheri, Yuval Rabani, Leonard J Schulman",
+    venue: "COLT 2024",
+    year: 2024,
+  },
+  {
+    title: "Causal Information Splitting: Engineering Proxy Features for Robustness to Distribution Shifts",
+    authors: "Bijan Mazaheri, Atalanti Mastakouri, Dominik Janzing, Michaela Hardt",
+    venue: "UAI 2023",
+    year: 2023,
+  },
+  {
+    title: "Causal Inference Despite Limited Global Confounding via Mixture Models",
+    authors: "Spencer Gordon, Bijan Mazaheri, Yuval Rabani, Leonard J Schulman",
+    venue: "CLeaR 2023",
+    year: 2023,
+  },
+  {
+    title: "Glioblastoma signature in the DNA of blood-derived cells",
+    authors: "Siddharth Jain, Bijan Mazaheri, Netanel Raviv, Jehoshua Bruck",
+    venue: "PLOS One",
+    year: 2021,
+  },
+  {
+    title: "Expert Graphs: Synthesizing New Expertise via Collaboration",
+    authors: "Bijan Mazaheri, Siddharth Jain, Jehoshua Bruck",
+    venue: "ISIT 2021",
+    year: 2021,
+  },
+  {
+    title: "Source Identification for Mixtures of Product Distributions",
+    authors: "Spencer Gordon, Bijan Mazaheri, Yuval Rabani, Leonard Schulman",
+    venue: "COLT 2021",
+    year: 2021,
+  },
+  {
+    title: "Robust Correction of Sampling Bias using Cumulative Distribution Functions",
+    authors: "Bijan Mazaheri, Siddharth Jain, Jehoshua Bruck",
+    venue: "NeurIPS 2020",
+    year: 2020,
+  },
 ];
 
 const PREPRINTS = [
-  // {
-  //   title: "Your Preprint Title",
-  //   authors: "Author A, Author B",
-  //   venue: "arXiv",
-  //   year: 2025,
-  //   paper: "https://arxiv.org/abs/...",
-  //   cite: `@article{...,\n  title={...},\n  author={...},\n  year={2025}\n}`,
-  // },
+  {
+    title: "Estimating Aleatoric Uncertainty in the Causal Treatment Effect",
+    authors: "Lihuan Xu, Bijan Mazaheri",
+    venue: "Under Review",
+    year: 2026,
+  },
+  {
+    title: "Data Augmentation via Causal Residual Bootstrapping",
+    authors: "Mateusz Gajewski, Sophia Xiao, Bijan Mazaheri",
+    venue: "Under Review",
+    year: 2026,
+  },
+  {
+    title: "Faithfulness and Intervention-Only Causal Discovery",
+    authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
+    venue: "Under Review",
+    year: 2025,
+  },
+  {
+    title: "Meta-Dependence in Conditional Independence Testing",
+    authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
+    venue: "arXiv:2504.12594, Under Review",
+    year: 2025,
+  },
+  {
+    title: "Causal Discovery under Latent Class Confounding",
+    authors: "Bijan Mazaheri, Spencer Gordon, Yuval Rabani, Leonard Schulman",
+    venue: "arXiv:2311.07454, Under Review",
+    year: 2025,
+  },
+  {
+    title: "The Sparse Hausdorff Moment Problem, with Application to Topic Models",
+    authors: "Spencer Gordon, Bijan Mazaheri, Yuval Rabani, Leonard J Schulman",
+    venue: "arXiv:2007.08101",
+    year: 2020,
+  },
+  {
+    title: "Cancer Classification from Healthy DNA using Machine Learning",
+    authors: "Siddharth Jain, Bijan Mazaheri, Netanel Raviv, Jehoshua Bruck",
+    venue: "BioRxiv",
+    year: 2019,
+  },
+  {
+    title: "Short Tandem Repeats Information in TCGA is Statistically Biased by Amplification",
+    authors: "Siddharth Jain, Bijan Mazaheri, Netanel Raviv, Jehoshua Bruck",
+    venue: "BioRxiv",
+    year: 2019,
+  },
 ];
 // ─────────────────────────────────────────────────────────────────────────────
 
