@@ -36,7 +36,7 @@ export default function NavBar() {
           <img 
             src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/e5e99dffc_Gemini_Generated_Image_qgk9hpqgk9hpqgk91.png"
             alt="CEDAR Lab"
-            className="h-20 object-contain"
+            className="h-12 object-contain"
           />
         </button>
 
