@@ -85,7 +85,7 @@ const NEWS = [
     description: 'Talk title: "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
   },
   {
-    date: "January 2025",
+    date: "January 2026",
     title: "Muhammad Ahmad joins the CEDAR Lab.",
     description: "Muhammad has been awarded a Dartmouth FYRE grant to support his research with the lab. Welcome!",
   },
