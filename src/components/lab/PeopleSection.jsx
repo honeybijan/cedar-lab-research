@@ -69,9 +69,14 @@ export default function PeopleSection() {
           <SectionLabel>Principal Investigator</SectionLabel>
           <div className="rounded-2xl border p-6 sm:p-8" style={{ borderColor: '#2E2820', backgroundColor: '#181510' }}>
             <div className="flex flex-col sm:flex-row sm:items-start gap-6">
-              <div className="w-20 h-20 rounded-xl flex-shrink-0 flex items-center justify-center text-2xl font-light"
-                style={{ backgroundColor: 'rgba(61,158,107,0.1)', color: '#3D9E6B', border: '1px solid rgba(61,158,107,0.2)' }}>
-                {PI.name.split(" ").map(n => n[0]).join("").slice(0, 2)}
+              <div className="w-36 h-36 rounded-xl flex-shrink-0 overflow-hidden"
+                style={{ border: '1px solid #2E2820' }}>
+                <img
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/cb4761851_20251114-Bijan-Mazaheri-kl-18.jpg"
+                  alt={PI.name}
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: '65% center' }}
+                />
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-medium" style={{ color: '#F0EAE0' }}>{PI.name}</h3>
