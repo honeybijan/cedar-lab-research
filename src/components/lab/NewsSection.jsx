@@ -66,17 +66,17 @@ const NEWS = [
   },
   {
     date: "June 2025",
-    title: "Tamier Baoyin and Leila Salken join the CIDER Lab for the summer.",
+    title: "Tamier Baoyin and Leila Salken join the CEDAR Lab for the summer.",
     description: "Welcome! Tamier is affiliated with Dartmouth and Mount Holyoke College, and Leila is from Williams College.",
   },
   {
     date: "May 2025",
-    title: "CIDER Lab attended CLeaR 2025.",
+    title: "CEDAR Lab attended CLeaR 2025.",
     description: 'Prof. Mazaheri presented "Omitted Labels Induce Nontransitive Paradoxes in Causality."',
   },
   {
     date: "May 2025",
-    title: "CIDER Lab attended AISTATS 2025.",
+    title: "CEDAR Lab attended AISTATS 2025.",
     description: 'Prof. Mazaheri presented "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
   },
   {
