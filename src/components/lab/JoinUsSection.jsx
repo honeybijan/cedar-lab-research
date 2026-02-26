@@ -8,7 +8,7 @@ const PROGRAMS = [
     url: "https://engineering.dartmouth.edu/graduate/phd",
   },
   {
-    name: "Engineering PhD Innovation Program (PHDI)",
+    name: "PhD Innovation Program (PhD-I)",
     description: "Thayer School of Engineering at Dartmouth",
     url: "https://engineering.dartmouth.edu/graduate/phdi",
   },
