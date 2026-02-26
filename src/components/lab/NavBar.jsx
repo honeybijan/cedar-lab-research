@@ -28,7 +28,7 @@ export default function NavBar() {
         borderBottom: '1px solid rgba(58, 50, 40, 0.5)',
       }}
     >
-      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+      <div className="max-w-5xl mx-auto px-6 py-2.5 flex items-center justify-between gap-6">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex-shrink-0 transition-opacity hover:opacity-70"
@@ -36,7 +36,7 @@ export default function NavBar() {
           <img 
             src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/4ab55adbb_CEDAR_Cropped.png"
             alt="CEDAR Lab"
-            className="h-12 object-contain"
+            className="h-10 object-contain"
           />
         </button>
 
