@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronRight, FileText } from "lucide-react";
+import { ChevronRight, FileText, Code2 } from "lucide-react";
 
 export default function ProjectCard({ project, index }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -95,12 +95,39 @@ export default function ProjectCard({ project, index }) {
                   {(!project.papers || project.papers.length === 0) && (
                     <p className="text-xs italic" style={{ color: '#7A6E62' }}>Papers to be added</p>
                   )}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-      </div>
-    </motion.div>
-  );
-}
+
+                  {project.software && project.software.length > 0 && (
+                    <div className="mt-6">
+                      <p className="text-xs font-semibold tracking-[0.15em] uppercase mb-3" style={{ color: '#3D9E6B' }}>
+                        Software & Contributions
+                      </p>
+                      <ul className="space-y-2">
+                        {project.software.map((item, i) => (
+                          <li key={i} className="flex items-start gap-2.5">
+                            <Code2 className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" style={{ color: '#D9A578' }} />
+                            <div>
+                              <a href={item.url || "#"} target="_blank" rel="noopener noreferrer"
+                                className="text-sm font-medium hover:underline" style={{ color: '#3D9E6B' }}
+                                onClick={(e) => e.stopPropagation()}>
+                                {item.title}
+                              </a>
+                              {item.authors && (
+                                <p className="text-xs mt-0.5" style={{ color: '#A09080' }}>
+                                  {item.authors}
+                                </p>
+                              )}
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  </div>
+                  </motion.div>
+                  )}
+                  </AnimatePresence>
+                  </div>
+                  </div>
+                  </motion.div>
+                  );
+                  }
