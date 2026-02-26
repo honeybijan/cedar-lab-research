@@ -11,11 +11,19 @@ const PI = {
 };
 
 const PHD_STUDENTS = [
-  // { name: "Student Name", research: "Research interest or topic" },
+  { name: "Sophia Xiao", research: "Thayer School of Engineering, Dartmouth" },
+  { name: "Zou Yang", research: "Thayer School of Engineering, Dartmouth" },
 ];
 
 const UNDERGRAD_STUDENTS = [
-  // { name: "Student Name", research: "Project description" },
+  { name: "Caroline Krantz" },
+  { name: "Muhammad Ahmad" },
+  { name: "Hailey King" },
+  { name: "Ruchita Nair" },
+  { name: "Benjamin Cavanagh" },
+  { name: "Sreshth Tiwari" },
+  { name: "Connor Kilkenny" },
+  { name: "Titus Johnson" },
 ];
 
 const COLLABORATORS = [
