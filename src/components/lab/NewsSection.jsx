@@ -14,12 +14,12 @@ const NEWS = [
   },
   {
     date: "December 2025",
-    title: "Ben Cavanagh joins the CIDER Lab.",
+    title: "Ben Cavanagh joins the CEDAR Lab.",
     description: "Welcome to the group!",
   },
   {
     date: "December 2025",
-    title: "CIDER Lab attended NeurIPS 2025 in San Diego.",
+    title: "CEDAR Lab attended NeurIPS 2025 in San Diego.",
     description: "Prof. Mazaheri presented at the CauScien Workshop and received a Top Reviewer Award.",
   },
   {
