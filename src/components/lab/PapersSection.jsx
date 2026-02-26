@@ -201,6 +201,13 @@ function PaperCard({ paper, index }) {
               <ImageIcon className="w-3 h-3" /> Poster
             </a>
           )}
+          {paper.slides && (
+            <a href={paper.slides} target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors"
+              style={{ backgroundColor: '#2E2820', color: '#A09080' }}>
+              <SlidersHorizontal className="w-3 h-3" /> Slides
+            </a>
+          )}
           {paper.talk && (
             <a href={paper.talk} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors"
