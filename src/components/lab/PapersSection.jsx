@@ -185,7 +185,7 @@ function PaperCard({ paper, index }) {
         {paper.venue}{paper.year ? ` · ${paper.year}` : ""}
       </p>
 
-      {(paper.paper || paper.poster || paper.talk || paper.cite) && (
+      {(paper.paper || paper.poster || paper.slides || paper.talk || paper.cite) && (
         <div className="flex flex-wrap gap-2 mt-4">
           {paper.paper && (
             <a href={paper.paper} target="_blank" rel="noopener noreferrer"
