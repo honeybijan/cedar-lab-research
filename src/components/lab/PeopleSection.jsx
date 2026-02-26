@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const PI = {
   name: "Your Name",
   title: "Assistant Professor",
-  affiliation: "Thayer School of Engineering at Dartmouth · Visiting Researcher, Broad Institute of MIT and Harvard",
+  affiliation: "Thayer School of Engineering at Dartmouth · Visiting Affiliate, Broad Institute of MIT and Harvard",
   bio: "I am a researcher focused on causal inference, information theory, and AI fairness. My work investigates the fundamental limits of causal discovery and develops tools for algorithmic recourse and robust decision-making in heterogeneous environments.",
   email: "your.email@dartmouth.edu",
   website: "",
