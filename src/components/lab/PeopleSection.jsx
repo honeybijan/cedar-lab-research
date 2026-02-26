@@ -90,7 +90,7 @@ export default function PeopleSection() {
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/cb4761851_20251114-Bijan-Mazaheri-kl-18.jpg"
                   alt={PI.name}
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: '75% center' }}
+                  style={{ objectPosition: '78% center' }}
                 />
               </div>
               <div className="flex-1">
