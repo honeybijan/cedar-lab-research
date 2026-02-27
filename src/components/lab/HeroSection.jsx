@@ -36,7 +36,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
           <p className="text-base sm:text-lg md:text-xl font-light tracking-wide mt-4 mb-10" style={{ color: '#D9A578' }}>
-            Causality for Experimentation, Detection, and Recourse
+            Causal Experimentation, Detection, and Recourse
           </p>
         </motion.div>
 
