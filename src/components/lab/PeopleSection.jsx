@@ -32,6 +32,7 @@ const UNDERGRAD_STUDENTS = [
 const ALUMNI = [
   { name: "Connor Kilkenny" },
   { name: "Titus Johnson" },
+  { name: "Leila Salken" },
 ];
 
 const COLLABORATORS = [
