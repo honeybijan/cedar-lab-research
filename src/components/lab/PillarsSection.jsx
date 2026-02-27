@@ -43,7 +43,7 @@ const PILLARS = [
     title: "Fundamentals",
     subtitle: "Establishing the universal limits of causal information recovery.",
     questions: [
-      "When can — and when can't — we learn causality, and what does this reveal about the limits of science and economics?",
+      "What do the fundamental limitations of causal inference tell us about science and economics?",
       "How do errors across distinct causal questions co-occur and interact?",
       "What are the information-theoretic limits of causal discovery, and how can they be strategically exploited?",
     ],
