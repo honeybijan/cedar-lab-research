@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
+import { ALL_PAPERS } from "./data/papers";
 
 const PROJECTS = [
   {
