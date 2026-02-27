@@ -7,7 +7,7 @@ const PILLARS = [
     title: "Experimentation",
     subtitle: "Theoretical design of optimal and efficient perturbations for system discovery.",
     questions: [
-      "How can we make large-scale scientific discovery more efficient?",
+      "How can we make scientific discovery more efficient?",
       "How do we maximize the informational utility in our experiments?",
       "How can we integrate scientific discoveries into ML and AI pipelines?",
     ],
