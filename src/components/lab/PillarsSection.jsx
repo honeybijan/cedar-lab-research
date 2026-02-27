@@ -13,7 +13,7 @@ const PILLARS = [
     ],
   },
   {
-    title: "Discovery",
+    title: "Detection",
     subtitle: "Unmasking causal heterogeneity and obscured stories in mixture models.",
     questions: [
       "How can we detect and quantify heterogeneous populations to identify bad actors or emerging diseases?",
