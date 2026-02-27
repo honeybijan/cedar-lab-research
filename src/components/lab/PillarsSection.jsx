@@ -35,7 +35,7 @@ const PILLARS = [
     subtitle: "Comparing and correcting for batch effects across disparate data sources.",
     questions: [
       "How can we disentangle experimental artifacts from true scientific signal?",
-      "What methods reliably correct for batch effects without distorting causal structure?",
+      "What methods reliably correct for batch effects without distorting causal dependencies?",
       "How do we quantify human performance in highly variable environments?",
     ],
   },
