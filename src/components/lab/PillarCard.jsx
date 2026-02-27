@@ -9,16 +9,22 @@ export default function PillarCard({ pillar, index }) {
   const [isLocked, setIsLocked] = useState(false);
   const accent = ACCENT_COLORS[index];
 
+  const isMobile = typeof window !== 'undefined' && window.matchMedia('(hover: none)').matches;
+
   const handleClick = () => {
-    setIsLocked(!isLocked);
+    if (isMobile) {
+      setIsExpanded(!isExpanded);
+    } else {
+      setIsLocked(!isLocked);
+    }
   };
 
   const handleMouseEnter = () => {
-    if (!isLocked) setIsExpanded(true);
+    if (!isMobile && !isLocked) setIsExpanded(true);
   };
 
   const handleMouseLeave = () => {
-    if (!isLocked) setIsExpanded(false);
+    if (!isMobile && !isLocked) setIsExpanded(false);
   };
 
   return (
