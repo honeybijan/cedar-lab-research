@@ -25,9 +25,9 @@ const PILLARS = [
     title: "Recourse",
     subtitle: "Counterfactual frameworks for AI fairness, privacy, and model-sharing.",
     questions: [
+      "Can we uncover and correct fundamental flaws in current data-processing standards?",
       "What counterfactual guarantees can we provide for algorithmic fairness?",
       "How can we address the reproducibility crisis without exposing private data or proprietary models?",
-      "Can recourse mechanisms be designed to remain valid under model updates?",
     ],
   },
   {
