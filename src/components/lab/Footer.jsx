@@ -7,7 +7,7 @@ export default function Footer() {
         <img
           src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/07d16b8e3_Square_CEDAR.png"
           alt="CEDAR Lab Logo"
-          className="w-12 h-12 mx-auto mb-5 opacity-70"
+          className="w-12 h-12 mx-auto mb-5 opacity-70" style={{ mixBlendMode: 'screen' }}
         />
         <p className="text-2xl font-light tracking-tight mb-2" style={{ color: '#F0EAE0' }}>
           The <span className="font-semibold" style={{ color: '#3D9E6B' }}>CEDAR</span> Lab
