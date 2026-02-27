@@ -26,6 +26,7 @@ const UNDERGRAD_STUDENTS = [
   { name: "Ruchita Nair" },
   { name: "Benjamin Cavanagh" },
   { name: "Sreshth Tiwari" },
+  { name: "Tamier Baoyin" },
 ];
 
 const ALUMNI = [
