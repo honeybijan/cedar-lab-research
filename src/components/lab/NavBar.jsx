@@ -23,7 +23,7 @@ export default function NavBar() {
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className="fixed top-0 left-0 right-0 z-50"
       style={{
-        backgroundColor: '#1a1915',
+        backgroundColor: 'rgba(17, 16, 9, 0.85)',
         backdropFilter: 'blur(12px)',
         borderBottom: '1px solid rgba(58, 50, 40, 0.5)',
       }}
