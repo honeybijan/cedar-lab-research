@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { FileText, ImageIcon, Video, Copy, Check, SlidersHorizontal } from "lucide-react";
+import { PUBLICATIONS, PREPRINTS } from "./data/papers";
 
 const PREVIEW_COUNT = 4;
 
 // Lab members whose names should be bolded in author lists
 const LAB_MEMBERS = ["Bijan Mazaheri", "Sophia Xiao", "Zou Yang"];
 
-const PUBLICATIONS = [
+const _UNUSED = [
   {
     title: "Synthetic Potential Outcomes and Causal Mixture Identifiability",
     authors: "Bijan Mazaheri, Chandler Squires, Caroline Uhler",
