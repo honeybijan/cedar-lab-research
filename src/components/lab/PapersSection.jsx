@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FileText, ImageIcon, Video, Copy, Check, SlidersHorizontal } from "lucide-react";
 import { PUBLICATIONS, PREPRINTS } from "./data/papers";
 
-const PREVIEW_COUNT = 4;
+const PREVIEW_COUNT = 4; // number of papers shown before "show more"
 
 // Lab members whose names should be bolded in author lists
 const LAB_MEMBERS = ["Bijan Mazaheri", "Sophia Xiao", "Zou Yang"];
