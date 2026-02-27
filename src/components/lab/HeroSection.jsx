@@ -48,9 +48,10 @@ export default function HeroSection() {
           <div className="w-12 h-[1px] mx-auto mb-10" style={{ background: '#3A3228' }} />
           <p className="text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-light" style={{ color: '#C8BAA8' }}>
             Our lab develops the mathematical foundations of causal inference — studying what can and cannot 
-            be learned about cause and effect from data. We design optimal experiments, detect hidden structure 
-            in heterogeneous populations, and build tools for algorithmic fairness and reproducibility that 
-            remain valid even when data or models must stay private.
+            be learned about cause and effect from data. By bridging theoretical computer science and causal 
+            inference, we design optimal experiments, detect hidden structure in heterogeneous populations, 
+            and build tools for algorithmic fairness and reproducibility that remain valid even when data 
+            or models must stay private.
           </p>
         </motion.div>
 
