@@ -7,7 +7,7 @@ const PILLARS = [
     title: "Experimentation",
     subtitle: "Theoretical design of optimal and efficient perturbations for system discovery.",
     questions: [
-      "How should experiments be sequenced to maximize causal information gain?",
+      "How can we make large-scale science more efficient?",
       "What perturbations most efficiently expose a system's underlying causal dependencies?",
       "Does successful intervention require confirmation of effect, or is the act of intervening itself informative?",
     ],
