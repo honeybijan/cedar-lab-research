@@ -45,7 +45,7 @@ const PILLARS = [
     questions: [
       "What do the fundamental limitations of causal inference tell us about science and economics?",
       "How do errors across distinct causal questions co-occur and interact?",
-      "What are the information-theoretic limits of causal discovery, and how can they be strategically exploited?",
+      "How much data is needed to learn different causal quantities, and how can this be exploited?",
     ],
   },
 ];
