@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 // Each item: { agency: "NSF", grant: "Award #...", title: "Grant Title", url: "https://..." (optional) }
 const FUNDING = [
   {
-    agency: "DARPA ARC",
+    agency: "DARPA ARC - COMPASS",
     grant: "Contract No. HR0011-25-3-0212",
     title: "Detecting Data Manipulation via Causal Information Geometry",
   },
