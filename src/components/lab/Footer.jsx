@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="py-16 px-6" style={{ backgroundColor: '#0D0C08' }}>
       <div className="max-w-4xl mx-auto text-center">
         <img
-          src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/24b85bb75_Square_CEDAR-Picsart-BackgroundRemover.png"
+          src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/9d54103d4_CEDAR_3_color.png"
           alt="CEDAR Lab Logo"
           className="w-16 h-16 mx-auto mb-5"
         />
