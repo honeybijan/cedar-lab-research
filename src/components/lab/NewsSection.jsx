@@ -33,7 +33,7 @@ const NEWS = [
   },
   {
     date: "November 2025",
-    title: "Prof. Bijan Mazaheri serves as Program Chair of CLeaR 2026.",
+    title: "Prof. Bijan Mazaheri is nominated to serve as Program Chair of CLeaR 2026.",
   },
   {
     date: "November 2025",
@@ -66,7 +66,7 @@ const NEWS = [
   },
   {
     date: "July 2025",
-    title: "CEDAR Lab is awarded a DARPA COMPASS contract.",
+    title: "CEDAR Lab is awarded a DARPA Advanced Research Concepts contract.",
     description: "We are awarded a $248,000 contract for the DARPA program on Critical Orientation of Mathematics to Produce Advancements in Science and Security (COMPASS).",
   },
   {
