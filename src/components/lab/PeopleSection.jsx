@@ -151,7 +151,7 @@ export default function PeopleSection() {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="mb-16"
         >
-          <SectionLabel>Academic Coordinator</SectionLabel>
+          <SectionLabel>Administrative Staff</SectionLabel>
           <div className="rounded-xl border p-5 inline-flex flex-col gap-2" style={{ borderColor: '#2E2820', backgroundColor: '#181510' }}>
             <p className="font-medium" style={{ color: '#F0EAE0' }}>{ACADEMIC_COORDINATOR.name}</p>
             <p className="text-sm" style={{ color: '#A09080' }}>{ACADEMIC_COORDINATOR.title}</p>
