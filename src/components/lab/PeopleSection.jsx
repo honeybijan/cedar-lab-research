@@ -35,6 +35,12 @@ const ALUMNI = [
   { name: "Leila Salken" },
 ];
 
+const ACADEMIC_COORDINATOR = {
+  name: "Liz Brennan",
+  title: "Academic Coordinator",
+  email: "liz.brennan@dartmouth.edu",
+};
+
 const COLLABORATORS = [
   { name: "Eric and Wendy Schmidt Center", affiliation: "Broad Institute of MIT and Harvard", url: "https://www.ericandwendyschmidtcenter.org/" },
 ];
