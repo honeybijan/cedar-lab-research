@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/f007qjk@dartmouth.edu/public_html/
+    - export DEPLOYPATH=/home/cedarhos/public_html/
     - /bin/npm install
     - /bin/npm run build
     - /bin/cp -R build/* $DEPLOYPATH
