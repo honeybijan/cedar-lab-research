@@ -62,10 +62,10 @@ export default function PillarsSection() {
           className="text-center mb-16"
         >
           <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#D9A578' }}>
-            Research Pillars
+            Research Branches
           </span>
           <h2 className="text-3xl sm:text-4xl font-light tracking-tight mt-4" style={{ color: '#F0EAE0' }}>
-            Five Pillars of{" "}
+            Five Branches of{" "}
             <span className="font-semibold" style={{ color: '#3D9E6B' }}>CEDAR</span>
           </h2>
           <div className="w-12 h-[1px] mx-auto mt-6" style={{ background: '#3A3228' }} />
