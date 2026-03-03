@@ -30,8 +30,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/  # Vite outputs to dist
+          local-dir: ./dist/
           server-dir: ./public_html/
-          # This ensures we don't delete files already on the server 
-          # unless they are part of the new build
-          delete-destination-extra-files: false 
+          # dangerous-clean-slate: false  <-- (Default) Keeps existing files on server
