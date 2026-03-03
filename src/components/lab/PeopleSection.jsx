@@ -8,9 +8,9 @@ const PI = {
   affiliation: "Thayer School of Engineering at Dartmouth · Visiting Scientist, Broad Institute of MIT and Harvard",
   bio: "I am interested in information-theoretical questions pertaining to causality, experimental design, and artificial intelligence. I am working to apply these ideas to new computational challenges in defense and biology. I am also an internationally competitive distance runner and enjoy applying my research to sports analytics.",
   email: "bijan@dartmouth.edu",
-  scholar: "https://scholar.google.com/citations?user=bijanmazaheri",
-  github: "https://github.com/bijanmazaheri",
-  linkedin: "https://www.linkedin.com/in/bijanmazaheri",
+  scholar: "https://scholar.google.com/citations?user=DXEdM48AAAAJ&hl=en",
+  github: "https://github.com/honeybijan",
+  linkedin: "https://www.linkedin.com/in/bijan-mazaheri-422b36111/",
   cv: "https://bijanmazaheri.com/uploads/bijanmazaheri_cv.pdf",
 };
 
