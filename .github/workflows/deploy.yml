@@ -30,6 +30,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps              # <--- ADD THIS LINE
+          port: 21                    # <--- Ensure this is 21 (Explicit TLS)
           local-dir: ./dist/
           server-dir: ./public_html/
-          # dangerous-clean-slate: false  <-- (Default) Keeps existing files on server
