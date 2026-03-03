@@ -1,16 +1,16 @@
-name: Build and Deploy
+name: Build and Deploy to cPanel
 
 on:
   push:
     branches:
-      - main  # Trigger on every push to main
+      - main  # This triggers the deploy every time you push to 'main'
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🚚 Get latest code
+      - name: 🚚 Checkout Code
         uses: actions/checkout@v4
 
       - name: 🛠️ Set up Node.js
@@ -24,13 +24,14 @@ jobs:
           npm ci
           npm run build
 
-      - name: 🚀 Sync to cPanel
+      - name: 🚀 Sync to cPanel via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Path to your finished files. 
-          # Use ./dist/ for Vite/Webpack or ./build/ for React
-          local-dir: ./dist/ 
+          local-dir: ./dist/  # Vite outputs to dist
           server-dir: ./public_html/
+          # This ensures we don't delete files already on the server 
+          # unless they are part of the new build
+          delete-destination-extra-files: false 
