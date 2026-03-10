@@ -152,13 +152,19 @@ export default function PeopleSection() {
           className="mb-16"
         >
           <SectionLabel>Administrative Staff</SectionLabel>
-          <div className="rounded-xl border p-5 inline-flex flex-col gap-2" style={{ borderColor: '#2E2820', backgroundColor: '#181510' }}>
-            <p className="font-medium" style={{ color: '#F0EAE0' }}>{ACADEMIC_COORDINATOR.name}</p>
-            <p className="text-sm" style={{ color: '#A09080' }}>{ACADEMIC_COORDINATOR.title}</p>
-            <a href={`mailto:${ACADEMIC_COORDINATOR.email}`} className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors hover:opacity-80 w-fit"
-              style={{ backgroundColor: '#2E2820', color: '#D9A578' }}>
-              <Mail className="w-3 h-3" /> Email
-            </a>
+          <div className="flex flex-col gap-4">
+            {ADMIN_STAFF.map((person, i) => (
+              <div key={i} className="rounded-xl border p-5 inline-flex flex-col gap-2" style={{ borderColor: '#2E2820', backgroundColor: '#181510' }}>
+                <p className="font-medium" style={{ color: '#F0EAE0' }}>{person.name}</p>
+                <p className="text-sm" style={{ color: '#A09080' }}>{person.title}</p>
+                {person.email && (
+                  <a href={`mailto:${person.email}`} className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors hover:opacity-80 w-fit"
+                    style={{ backgroundColor: '#2E2820', color: '#D9A578' }}>
+                    <Mail className="w-3 h-3" /> Email
+                  </a>
+                )}
+              </div>
+            ))}
           </div>
         </motion.div>
 
