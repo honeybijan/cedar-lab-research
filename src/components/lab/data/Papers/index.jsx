@@ -101,6 +101,8 @@ export const PREPRINTS = [
     authors: "Zou Yang, Sophia Xiao, Bijan Mazaheri",
     venue: "Under Review",
     year: 2026,
+    url: "https://arxiv.org/abs/2603.06984",
+    paper: "https://arxiv.org/abs/2603.06984",
   },
   {
     title: "Data Augmentation via Causal Residual Bootstrapping",
