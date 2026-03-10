@@ -80,7 +80,6 @@ export default function JoinUsSection() {
                   {p.name}
                 </p>
                 <p className="text-xs mt-2" style={{ color: '#7A6E62' }}>{p.description}</p>
-                <p className="text-xs mt-3" style={{ color: '#D9A578' }}>Learn more →</p>
               </motion.a>
             ))}
           </div>
