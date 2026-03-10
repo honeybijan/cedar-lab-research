@@ -34,19 +34,32 @@ export default function FundingSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.06 }}
-                className="rounded-xl border p-5"
+                className="rounded-xl border p-5 flex flex-col gap-2"
                 style={{ borderColor: '#2E2820', backgroundColor: '#181510' }}
               >
-                <div className="flex items-baseline gap-2 mb-1 flex-wrap">
-                  <p className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#3D9E6B' }}>{f.agency}</p>
-                  {f.program && <p className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#D9A578' }}>· {f.program}</p>}
+                {/* Agency · Program badge row */}
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#A09080' }}>{f.agency}</span>
+                  {f.program && (
+                    <>
+                      <span className="text-xs" style={{ color: '#3A3228' }}>·</span>
+                      <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#A09080' }}>{f.program}</span>
+                    </>
+                  )}
+                  {f.mechanism && (
+                    <>
+                      <span className="text-xs" style={{ color: '#3A3228' }}>·</span>
+                      <span className="text-xs" style={{ color: '#5A4E42' }}>{f.mechanism}</span>
+                    </>
+                  )}
                 </div>
-                {f.mechanism && <p className="text-xs mb-1" style={{ color: '#7A6E62' }}>{f.mechanism}</p>}
-                <p className="text-sm font-medium" style={{ color: '#F0EAE0' }}>{f.title}</p>
-                {f.grant && <p className="text-xs mt-1" style={{ color: '#7A6E62' }}>{f.grant}</p>}
+                {/* Title */}
+                <p className="text-sm leading-snug" style={{ color: '#C8BAA8' }}>{f.title}</p>
+                {/* Grant number */}
+                {f.grant && <p className="text-xs" style={{ color: '#5A4E42' }}>{f.grant}</p>}
                 {f.url && (
                   <a href={f.url} target="_blank" rel="noopener noreferrer"
-                    className="text-xs mt-2 inline-block hover:underline" style={{ color: '#D9A578' }}>
+                    className="text-xs hover:underline w-fit" style={{ color: '#D9A578' }}>
                     View grant →
                   </a>
                 )}
