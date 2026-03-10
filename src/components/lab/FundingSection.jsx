@@ -37,7 +37,11 @@ export default function FundingSection() {
                 className="rounded-xl border p-5"
                 style={{ borderColor: '#2E2820', backgroundColor: '#181510' }}
               >
-                <p className="text-xs font-semibold tracking-widest uppercase mb-1" style={{ color: '#3D9E6B' }}>{f.agency}</p>
+                <div className="flex items-baseline gap-2 mb-1 flex-wrap">
+                  <p className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#3D9E6B' }}>{f.agency}</p>
+                  {f.program && <p className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#D9A578' }}>· {f.program}</p>}
+                </div>
+                {f.mechanism && <p className="text-xs mb-1" style={{ color: '#7A6E62' }}>{f.mechanism}</p>}
                 <p className="text-sm font-medium" style={{ color: '#F0EAE0' }}>{f.title}</p>
                 {f.grant && <p className="text-xs mt-1" style={{ color: '#7A6E62' }}>{f.grant}</p>}
                 {f.url && (
