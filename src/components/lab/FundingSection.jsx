@@ -60,7 +60,7 @@ export default function FundingSection() {
                 {f.url && (
                   <a href={f.url} target="_blank" rel="noopener noreferrer"
                     className="text-xs hover:underline w-fit" style={{ color: '#D9A578' }}>
-                    View grant →
+                    Details →
                   </a>
                 )}
               </motion.div>
