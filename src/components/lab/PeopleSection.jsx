@@ -53,7 +53,7 @@ export default function PeopleSection() {
               <div className="w-56 h-56 rounded-xl flex-shrink-0 overflow-hidden"
                 style={{ border: '1px solid #2E2820' }}>
                 <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/cb4761851_20251114-Bijan-Mazaheri-kl-18.jpg"
+                  src={PI.photo}
                   alt={PI.name}
                   className="w-full h-full object-cover"
                   style={{ objectPosition: '78% center' }}
