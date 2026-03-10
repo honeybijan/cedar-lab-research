@@ -24,11 +24,11 @@ export const NEWS = [
   {
     date: "December 2025",
     title: "CEDAR Lab attends NeurIPS 2025 in San Diego.",
-    description: "Prof. Mazaheri presents at the CauScien Workshop and receives a Top Reviewer Award.",
+    description: "Prof. Mazaheri attends the CauScien Workshop and receives a Top Reviewer Award.",
   },
   {
     date: "November 2025",
-    title: "Prof. Bijan Mazaheri is nominated to serve as Program Chair of CLeaR 2026.",
+    title: "Prof. Bijan Mazaheri will serve as Program Chair of CLeaR 2026.",
   },
   {
     date: "November 2025",
@@ -62,7 +62,7 @@ export const NEWS = [
   {
     date: "July 2025",
     title: "CEDAR Lab is awarded a DARPA Advanced Research Concepts contract.",
-    description: "We are awarded a $248,000 contract for the DARPA program on Critical Orientation of Mathematics to Produce Advancements in Science and Security (COMPASS).",
+    description: "We have been awarded a $248,000 contract for the DARPA program on Critical Orientation of Mathematics to Produce Advancements in Science and Security (COMPASS).",
   },
   {
     date: "June 2025",
@@ -81,7 +81,7 @@ export const NEWS = [
   },
   {
     date: "February 2025",
-    title: "Prof. Bijan Mazaheri gives an invited talk at Tuck School of Business at Dartmouth.",
+    title: "Prof. Bijan Mazaheri gives an invited talk at Tuck School of Business.",
     description: 'Talk title: "Synthetic Potential Outcomes and Causal Mixture Identifiability."',
   },
   {
