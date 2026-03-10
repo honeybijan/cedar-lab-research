@@ -18,12 +18,12 @@ const PROGRAMS = [
     url: "https://engineering.dartmouth.edu/graduate/phd/industry-research-option",
   },
   {
-    name: "Quantitative Biological Sciences (QBS)",
+    name: "PhD in Quantitative Biological Sciences (QBS)",
     description: "Geisel School of Medicine at Dartmouth",
     url: "https://geiselmed.dartmouth.edu/qbs/",
   },
   {
-    name: "Computational Science and Modeling (CSMP)",
+    name: "PhD in Computational Science and Modeling (CSMP)",
     description: "Guarini School of Graduate and Advanced Studies at Dartmouth",
     url: "https://sites.dartmouth.edu/csmp/",
   },
