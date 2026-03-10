@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { FileText, ImageIcon, Video, Copy, Check, SlidersHorizontal } from "lucide-react";
-import { PUBLICATIONS, PREPRINTS } from "./data/papers";
+import { PUBLICATIONS, PREPRINTS } from "./data/Papers/index";
 
 const PREVIEW_COUNT = 4; // number of papers shown before "show more"
 

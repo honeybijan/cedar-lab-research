@@ -1,20 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// ── ADD FUNDING SOURCES HERE ──────────────────────────────────────────────────
-// Each item: { agency: "NSF", grant: "Award #...", title: "Grant Title", url: "https://..." (optional) }
-const FUNDING = [
-  {
-    agency: "DARPA ARC - COMPASS",
-    grant: "Contract No. HR0011-25-3-0212",
-    title: "Detecting Data Manipulation via Causal Information Geometry",
-  },
-  {
-    agency: "DIMEX",
-    title: "Building collaborations between Dartmouth researchers and researchers in the Middle East and North Africa.",
-  },
-];
-// ─────────────────────────────────────────────────────────────────────────────
+import { FUNDING } from "./data/Funding/index";
 
 export default function FundingSection() {
   return (
