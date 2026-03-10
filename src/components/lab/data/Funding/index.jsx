@@ -10,8 +10,8 @@ export const FUNDING = [
     title: "Detecting Data Manipulation via Causal Information Geometry",
   },
   {
-    agency: "Dartmouth College",
+    agency: "Dartmouth",
     program: "DIMEX",
-    title: "Building collaborations between Dartmouth researchers and researchers in the Middle East and North Africa.",
+    title: "Building collaborations in the Middle East and North Africa.",
   },
 ];
