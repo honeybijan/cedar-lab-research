@@ -13,7 +13,7 @@ export const FUNDING = [
   {
     agency: "Dartmouth",
     program: "DIMEX",
-    title: "Building collaborations in the Middle East and North Africa.",
+    title: "Building collaborations in the Middle East and North Africa",
     url: "https://sites.dartmouth.edu/dimex/",
   },
 ];
