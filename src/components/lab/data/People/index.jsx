@@ -1,0 +1,22 @@
+import PI from './pi.json';
+import LizBrennan from './admin/liz_brennan.json';
+import SophiaXiao from './phd/sophia_xiao.json';
+import ZouYang from './phd/zou_yang.json';
+import CarolineKrantz from './undergrad/caroline_krantz.json';
+import MuhammadAhmad from './undergrad/muhammad_ahmad.json';
+import HaileyKing from './undergrad/hailey_king.json';
+import RuchitaNair from './undergrad/ruchita_nair.json';
+import BenjaminCavanagh from './undergrad/benjamin_cavanagh.json';
+import SreshthTiwari from './undergrad/sreshth_tiwari.json';
+import TamierBaoyin from './undergrad/tamier_baoyin.json';
+import ConnorKilkenny from './alumni/connor_kilkenny.json';
+import TitusJohnson from './alumni/titus_johnson.json';
+import LeilaSalken from './alumni/leila_salken.json';
+import SchmidtCenter from './collaborators/schmidt_center.json';
+
+export { PI };
+export const ADMIN_STAFF = [LizBrennan];
+export const PHD_STUDENTS = [SophiaXiao, ZouYang];
+export const UNDERGRAD_STUDENTS = [CarolineKrantz, MuhammadAhmad, HaileyKing, RuchitaNair, BenjaminCavanagh, SreshthTiwari, TamierBaoyin];
+export const ALUMNI = [ConnorKilkenny, TitusJohnson, LeilaSalken];
+export const COLLABORATORS = [SchmidtCenter];
