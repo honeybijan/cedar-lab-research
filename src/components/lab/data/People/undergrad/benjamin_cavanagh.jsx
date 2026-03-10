@@ -1,3 +1,0 @@
-{
-  "name": "Benjamin Cavanagh"
-}
