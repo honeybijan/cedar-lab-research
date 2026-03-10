@@ -2,13 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { ALL_PAPERS } from "./data/Papers/index";
+import { PROJECTS } from "./data/Projects/index";
 
 // Helper to look up full paper data by title from the central papers list
 function lookupPapers(titles) {
   return titles.map(title => ALL_PAPERS.find(p => p.title === title) || { title });
 }
-
-import { PROJECTS } from "./data/Projects/index";
 
 export default function ProjectsSection() {
   const displayProjects = PROJECTS.map(p => ({ ...p, papers: lookupPapers(p.paperTitles) }));
