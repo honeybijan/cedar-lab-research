@@ -64,12 +64,7 @@ export default function FundingSection() {
                 <p className="text-sm leading-snug" style={{ color: '#C8BAA8' }}>{f.title}</p>
                 {/* Grant number */}
                 {f.grant && <p className="text-xs" style={{ color: '#5A4E42' }}>{f.grant}</p>}
-                {f.url && (
-                  <a href={f.url} target="_blank" rel="noopener noreferrer"
-                    className="text-xs hover:underline w-fit" style={{ color: '#D9A578' }}>
-                    View grant →
-                  </a>
-                )}
+
               </motion.div>
             ))}
           </div>
