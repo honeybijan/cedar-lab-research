@@ -97,7 +97,7 @@ export const PREPRINTS = [
     paper: "https://arxiv.org/abs/2602.08461",
   },
   {
-    title: "Masking Unfairness: Hiding Causality in Zero ATE",
+    title: "Masked Unfairness: Hiding Causality in Zero ATE",
     authors: "Zou Yang, Sophia Xiao, Bijan Mazaheri",
     venue: "Under Review",
     year: 2026,
