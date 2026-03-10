@@ -43,7 +43,14 @@ export default function FundingSection() {
                   {f.program && (
                     <>
                       <span className="text-xs" style={{ color: '#3A3228' }}>·</span>
-                      <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#A09080' }}>{f.program}</span>
+                      {f.url ? (
+                        <a href={f.url} target="_blank" rel="noopener noreferrer"
+                          className="text-xs font-semibold tracking-widest uppercase hover:underline" style={{ color: '#A09080' }}>
+                          {f.program}
+                        </a>
+                      ) : (
+                        <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#A09080' }}>{f.program}</span>
+                      )}
                     </>
                   )}
                   {f.mechanism && (
@@ -60,7 +67,7 @@ export default function FundingSection() {
                 {f.url && (
                   <a href={f.url} target="_blank" rel="noopener noreferrer"
                     className="text-xs hover:underline w-fit" style={{ color: '#D9A578' }}>
-                    Details →
+                    View grant →
                   </a>
                 )}
               </motion.div>
