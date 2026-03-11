@@ -20,10 +20,17 @@ export default function PillarCard({ pillar, index }) {
       transition={{ duration: 0.6, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
     >
       <div
-        className="group relative rounded-2xl border cursor-pointer overflow-hidden transition-colors duration-300"
+        className="group relative rounded-2xl border cursor-pointer overflow-hidden transition-all duration-300 hover:border-opacity-100"
         style={{
           borderColor: isExpanded ? accent : '#2E2820',
           backgroundColor: isExpanded ? '#1F1B13' : '#181510',
+          '--hover-border': accent,
+        }}
+        onMouseEnter={(e) => {
+          if (!isExpanded) e.currentTarget.style.borderColor = accent;
+        }}
+        onMouseLeave={(e) => {
+          if (!isExpanded) e.currentTarget.style.borderColor = '#2E2820';
         }}
         onClick={handleClick}
       >
