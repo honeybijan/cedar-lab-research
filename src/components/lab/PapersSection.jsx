@@ -70,8 +70,10 @@ function PaperCard({ paper, index }) {
         <div className="flex flex-wrap gap-2 mt-4">
           {paper.paper && (
             <a href={paper.paper} target="_blank" rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-all hover:opacity-80"
-              style={{ backgroundColor: 'rgba(61,158,107,0.12)', color: '#3D9E6B' }}>
+              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-all"
+              style={{ backgroundColor: 'rgba(61,158,107,0.12)', color: '#3D9E6B' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(61,158,107,0.20)'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(61,158,107,0.12)'}>
               <FileText className="w-3 h-3" /> Paper
             </a>
           )}
