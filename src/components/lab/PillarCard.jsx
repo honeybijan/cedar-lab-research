@@ -6,25 +6,10 @@ const ACCENT_COLORS = ['#3D9E6B', '#00693E', '#C4834A', '#A66330', '#3D9E6B'];
 
 export default function PillarCard({ pillar, index }) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [isLocked, setIsLocked] = useState(false);
   const accent = ACCENT_COLORS[index];
 
-  const isMobile = typeof window !== 'undefined' && window.matchMedia('(hover: none)').matches;
-
   const handleClick = () => {
-    if (isMobile) {
-      setIsExpanded(!isExpanded);
-    } else {
-      setIsLocked(!isLocked);
-    }
-  };
-
-  const handleMouseEnter = () => {
-    if (!isMobile && !isLocked) setIsExpanded(true);
-  };
-
-  const handleMouseLeave = () => {
-    if (!isMobile && !isLocked) setIsExpanded(false);
+    setIsExpanded(!isExpanded);
   };
 
   return (
@@ -37,11 +22,9 @@ export default function PillarCard({ pillar, index }) {
       <div
         className="group relative rounded-2xl border cursor-pointer overflow-hidden transition-colors duration-300"
         style={{
-          borderColor: isExpanded || isLocked ? accent : '#2E2820',
-          backgroundColor: isExpanded || isLocked ? '#1F1B13' : '#181510',
+          borderColor: isExpanded ? accent : '#2E2820',
+          backgroundColor: isExpanded ? '#1F1B13' : '#181510',
         }}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
         onClick={handleClick}
       >
         <div className="absolute top-0 left-0 right-0 h-[2px] transition-opacity duration-500"
@@ -67,7 +50,7 @@ export default function PillarCard({ pillar, index }) {
           </div>
 
           <AnimatePresence>
-            {(isExpanded || isLocked) && (
+            {isExpanded && (
               <motion.div
                 initial={{ height: 0, opacity: 0 }}
                 animate={{ height: "auto", opacity: 1 }}
