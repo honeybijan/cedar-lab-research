@@ -70,29 +70,35 @@ function PaperCard({ paper, index }) {
         <div className="flex flex-wrap gap-2 mt-4">
           {paper.paper && (
             <a href={paper.paper} target="_blank" rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors"
+              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-all hover:opacity-80"
               style={{ backgroundColor: 'rgba(61,158,107,0.12)', color: '#3D9E6B' }}>
               <FileText className="w-3 h-3" /> Paper
             </a>
           )}
           {paper.poster && (
             <a href={paper.poster} target="_blank" rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors"
-              style={{ backgroundColor: '#2E2820', color: '#A09080' }}>
+              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-all hover:bg-opacity-70"
+              style={{ backgroundColor: '#2E2820', color: '#A09080' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#C8BAA8'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#A09080'}>
               <ImageIcon className="w-3 h-3" /> Poster
             </a>
           )}
           {paper.slides && (
             <a href={paper.slides} target="_blank" rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors"
-              style={{ backgroundColor: '#2E2820', color: '#A09080' }}>
+              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-all hover:bg-opacity-70"
+              style={{ backgroundColor: '#2E2820', color: '#A09080' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#C8BAA8'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#A09080'}>
               <SlidersHorizontal className="w-3 h-3" /> Slides
             </a>
           )}
           {paper.talk && (
             <a href={paper.talk} target="_blank" rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors"
-              style={{ backgroundColor: '#2E2820', color: '#A09080' }}>
+              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-all hover:bg-opacity-70"
+              style={{ backgroundColor: '#2E2820', color: '#A09080' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#C8BAA8'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#A09080'}>
               <Video className="w-3 h-3" /> Talk
             </a>
           )}
