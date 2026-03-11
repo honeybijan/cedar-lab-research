@@ -25,7 +25,7 @@ export default function Footer() {
           <img 
             src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/2fcff2481_D-Pine_Rev.png"
             alt="Dartmouth College"
-            className="h-16 w-auto object-contain opacity-50"
+            className="h-16 w-auto object-contain opacity-70"
           />
         </div>
       </div>
