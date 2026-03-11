@@ -17,11 +17,13 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="mb-6">
-            <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/68bcdb091_white-dartmouth-engineering-brandmark.png"
-              alt="Dartmouth Engineering"
-              className="h-10 mx-auto opacity-70"
-            />
+            <a href="https://engineering.dartmouth.edu/" target="_blank" rel="noopener noreferrer">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/68bcdb091_white-dartmouth-engineering-brandmark.png"
+                alt="Dartmouth Engineering"
+                className="h-10 mx-auto opacity-70 hover:opacity-90 transition-opacity"
+              />
+            </a>
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight mb-2" style={{ color: '#F0EAE0' }}>

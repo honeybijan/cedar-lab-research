@@ -22,11 +22,13 @@ export default function Footer() {
         
         {/* Dartmouth D-Pine Logo */}
         <div className="flex justify-center mt-10" style={{ padding: '20px 0' }}>
-          <img 
-            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/2fcff2481_D-Pine_Rev.png"
-            alt="Dartmouth College"
-            className="h-16 w-auto object-contain opacity-70"
-          />
+          <a href="https://engineering.dartmouth.edu/" target="_blank" rel="noopener noreferrer">
+            <img 
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/2fcff2481_D-Pine_Rev.png"
+              alt="Dartmouth College"
+              className="h-16 w-auto object-contain opacity-70 hover:opacity-90 transition-opacity"
+            />
+          </a>
         </div>
       </div>
     </footer>
