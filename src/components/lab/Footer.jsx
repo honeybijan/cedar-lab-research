@@ -19,6 +19,15 @@ export default function Footer() {
         <p className="text-xs" style={{ color: '#5A4E42' }}>
           Causality for Experimentation, Discovery, and Recourse
         </p>
+        
+        {/* Dartmouth D-Pine Logo */}
+        <div className="flex justify-center mt-10" style={{ padding: '20px 0' }}>
+          <img 
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/f118036d4_D-Pine_RGB.png"
+            alt="Dartmouth College"
+            className="h-16 w-auto object-contain opacity-90"
+          />
+        </div>
       </div>
     </footer>
   );
