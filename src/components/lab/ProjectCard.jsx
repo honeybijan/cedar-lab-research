@@ -15,10 +15,16 @@ export default function ProjectCard({ project, index }) {
       transition={{ duration: 0.5, delay: index * 0.08 }}
     >
       <div
-        className="group relative rounded-xl border cursor-pointer overflow-hidden transition-colors duration-300"
+        className="group relative rounded-xl border cursor-pointer overflow-hidden transition-all duration-300"
         style={{
           borderColor: isExpanded ? '#C4834A' : '#2E2820',
           backgroundColor: isExpanded ? '#1F1B13' : '#181510',
+        }}
+        onMouseEnter={(e) => {
+          if (!isExpanded) e.currentTarget.style.borderColor = '#C4834A';
+        }}
+        onMouseLeave={(e) => {
+          if (!isExpanded) e.currentTarget.style.borderColor = '#2E2820';
         }}
         onClick={() => setIsExpanded(!isExpanded)}
       >
