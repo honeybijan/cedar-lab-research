@@ -64,7 +64,7 @@ export default function HeroSection() {
             onClick={() => document.getElementById('pillars')?.scrollIntoView({ behavior: 'smooth' })}
             className="group flex flex-col items-center gap-2 mx-auto cursor-pointer"
           >
-            <span className="text-xs tracking-[0.2em] uppercase" style={{ color: '#7A6E62' }}>
+            <span className="text-xs tracking-[0.2em] uppercase" style={{ color: '#8B7D6F' }}>
               Explore Our Research
             </span>
             <motion.div animate={{ y: [0, 6, 0] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}>

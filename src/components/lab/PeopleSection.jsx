@@ -13,7 +13,7 @@ function SectionLabel({ children }) {
 
 function EmptyState({ label }) {
   return (
-    <p className="text-sm italic" style={{ color: '#5A4E42' }}>
+    <p className="text-sm italic" style={{ color: '#8B7D6F' }}>
       {label}
     </p>
   );
@@ -54,15 +54,17 @@ export default function PeopleSection() {
                 style={{ border: '1px solid #2E2820' }}>
                 <img
                   src={PI.photo}
-                  alt={PI.name}
+                  alt="Professor Bijan Mazaheri at a classroom chalkboard demonstrating statistical concepts"
                   className="w-full h-full object-cover"
                   style={{ objectPosition: '78% center' }}
                 />
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-medium" style={{ color: '#F0EAE0' }}>{PI.name}</h3>
+                <h3 className="text-xl font-medium" style={{ color: '#F0EAE0' }}>
+                  <a href="https://engineering.dartmouth.edu/community/faculty/bijan-mazaheri" target="_blank" rel="noopener noreferrer" className="hover:underline">{PI.name}</a>
+                </h3>
                 <p className="text-sm mt-1" style={{ color: '#3D9E6B' }}>{PI.title}</p>
-                <p className="text-xs mt-0.5" style={{ color: '#7A6E62' }}>{PI.affiliation}</p>
+                <p className="text-xs mt-0.5" style={{ color: '#8B7D6F' }}>{PI.affiliation}</p>
                 <p className="text-sm leading-relaxed mt-4" style={{ color: '#C8BAA8' }}>{PI.bio}</p>
                 <div className="flex flex-wrap gap-3 mt-4">
                   {PI.email && (

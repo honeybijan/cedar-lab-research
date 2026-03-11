@@ -35,7 +35,7 @@ export default function NavBar() {
         >
           <img 
             src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/9d54103d4_CEDAR_3_color.png"
-            alt="CEDAR Lab"
+            alt="CEDAR lab logo"
             className="h-9 w-9 object-contain"
           />
           <span className="text-lg font-light tracking-tight" style={{ color: '#F0EAE0' }}>
