@@ -23,6 +23,8 @@ jobs:
         run: |
           npm ci
           npm run build
+          mkdir -p deploy/public_html
+          cp -r dist/* deploy/public_html/
 
       - name: 🚀 Sync to cPanel via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
@@ -32,11 +34,10 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           port: 21
-          local-dir: ./dist/
-          server-dir: public_html/
-          dangerous-clean-slate: true
+          local-dir: ./deploy/
+          server-dir: /
+          dangerous-clean-slate: false
           timeout: 60000
-          log-level: verbose
           exclude: |
             **/.git*
             **/.git*/**
