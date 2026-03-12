@@ -10,8 +10,8 @@ export const PUBLICATIONS = [
     year: 2025,
     url: "https://proceedings.mlr.press/v258/mazaheri25a.html",
     paper: "https://proceedings.mlr.press/v258/mazaheri25a.html",
-    poster: "/Posters/AISTATS2025poster.pdf",
-    slides: "https://bijanmazaheri.com/presentations/spo",
+    poster: "/posters/AISTATS2025poster.pdf",
+    slides: "/presentations/SPO.html",
     talk: "https://www.youtube.com/watch?app=desktop&si=rckWo1PphQC5QqoC&v=hLr7KmUUvJ4&feature=youtu.be",
   },
   {
@@ -21,7 +21,8 @@ export const PUBLICATIONS = [
     year: 2025,
     url: "https://arxiv.org/abs/2311.06840",
     paper: "https://arxiv.org/abs/2311.06840",
-    poster: "/Posters/CLeaR2025poster.pdf",
+    poster: "/posters/CLeaR2025poster.pdf",
+    slides: "/presentations/OCIS.html",
   },
   {
     title: "Identification of Mixtures of Discrete Product Distributions in Near-Optimal Sample and Time Complexity",
@@ -38,7 +39,7 @@ export const PUBLICATIONS = [
     year: 2023,
     url: "https://arxiv.org/abs/2305.05832",
     paper: "https://arxiv.org/abs/2305.05832",
-    poster: "/Posters/UAI2023poster.pdf",
+    poster: "/posters/UAI2023poster.pdf",
     talk: "https://youtu.be/c7FNR7vwRo8",
   },
   {
@@ -48,7 +49,7 @@ export const PUBLICATIONS = [
     year: 2023,
     url: "https://arxiv.org/abs/2112.11602",
     paper: "https://arxiv.org/abs/2112.11602",
-    poster: "https://bijanmazaheri.com/publication/kmixbnd/CLeaR_2023_Poster_Vertical_Final.pdf",
+    poster: "/posters/CLeaR_2023_Poster_Vertical_Final.pdf",
   },
   {
     title: "Glioblastoma signature in the DNA of blood-derived cells",
