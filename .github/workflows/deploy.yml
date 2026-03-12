@@ -16,7 +16,7 @@ jobs:
       - name: 🛠️ Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
       - name: 🏗️ Install and Build
@@ -30,7 +30,17 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps              # <--- ADD THIS LINE
-          port: 21                    # <--- Ensure this is 21 (Explicit TLS)
+          protocol: ftps
+          port: 21
           local-dir: ./dist/
           server-dir: ./public_html/
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            presentations/board_intro_assets/**
+            presentations/Sanya_assets/**
+            presentations/ResearchOverview_assets/**
+            presentations/OCIS_assets/**
+            presentations/SPO_assets/**
