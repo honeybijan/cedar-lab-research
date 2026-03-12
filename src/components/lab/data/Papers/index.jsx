@@ -10,7 +10,7 @@ export const PUBLICATIONS = [
     year: 2025,
     url: "https://proceedings.mlr.press/v258/mazaheri25a.html",
     paper: "https://proceedings.mlr.press/v258/mazaheri25a.html",
-    poster: "https://bijanmazaheri.com/publication/spos/AISTATS2025poster.pdf",
+    poster: "/Posters/AISTATS2025poster.pdf",
     slides: "https://bijanmazaheri.com/presentations/spo",
     talk: "https://www.youtube.com/watch?app=desktop&si=rckWo1PphQC5QqoC&v=hLr7KmUUvJ4&feature=youtu.be",
   },
@@ -21,7 +21,7 @@ export const PUBLICATIONS = [
     year: 2025,
     url: "https://arxiv.org/abs/2311.06840",
     paper: "https://arxiv.org/abs/2311.06840",
-    poster: "https://bijanmazaheri.com/publication/reweighting_paradoxes/CLeaR2025poster.pdf",
+    poster: "/Posters/CLeaR2025poster.pdf",
   },
   {
     title: "Identification of Mixtures of Discrete Product Distributions in Near-Optimal Sample and Time Complexity",
@@ -38,7 +38,7 @@ export const PUBLICATIONS = [
     year: 2023,
     url: "https://arxiv.org/abs/2305.05832",
     paper: "https://arxiv.org/abs/2305.05832",
-    poster: "https://bijanmazaheri.com/publication/causal_information_splitting/UAI2023poster.pdf",
+    poster: "/Posters/UAI2023poster.pdf",
     talk: "https://youtu.be/c7FNR7vwRo8",
   },
   {
