@@ -35,7 +35,13 @@ jobs:
           local-dir: ./dist/
           server-dir: ./public_html/
           dangerous-clean-slate: false
+          timeout: 60000
           exclude: |
             **/.git*
             **/.git*/**
             **/node_modules/**
+            presentations/board_intro_assets/**
+            presentations/Sanya_assets/**
+            presentations/ResearchOverview_assets/**
+            presentations/OCIS_assets/**
+            presentations/SPO_assets/**
