@@ -25,23 +25,24 @@ jobs:
           npm run build
 
       - name: 🚀 Sync to cPanel via FTP
-        run: |
-          lftp -e "
-            set ssl:verify-certificate no;
-            set ftp:ssl-allow yes;
-            set ftp:ssl-force yes;
-            set ftp:ssl-protect-data yes;
-            set mirror:parallel-transfer-count 5;
-            open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ftps://${{ secrets.FTP_SERVER }}:21;
-            mirror --reverse --delete --verbose \
-              --exclude-glob .git* \
-              --exclude-glob node_modules/ \
-              --exclude-glob .DS_Store \
-              --exclude-glob board_intro_assets/ \
-              --exclude-glob Sanya_assets/ \
-              --exclude-glob ResearchOverview_assets/ \
-              --exclude-glob OCIS_assets/ \
-              --exclude-glob SPO_assets/ \
-              ./dist/ /public_html/;
-            quit;
-          "
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./dist/
+          server-dir: /
+          dangerous-clean-slate: false
+          timeout: 60000
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/board_intro_assets/**
+            **/Sanya_assets/**
+            **/ResearchOverview_assets/**
+            **/OCIS_assets/**
+            **/SPO_assets/**
+            **/.DS_Store
