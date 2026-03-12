@@ -21,7 +21,7 @@ export default function HeroSection() {
               <img 
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/68bcdb091_white-dartmouth-engineering-brandmark.png"
                 alt="Dartmouth Engineering"
-                className="h-10 mx-auto opacity-70 hover:opacity-90 transition-opacity"
+                className="h-10 w-auto mx-auto opacity-70 hover:opacity-90 transition-opacity"
               />
             </a>
           </div>
