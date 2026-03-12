@@ -26,12 +26,6 @@ jobs:
           mkdir -p deploy/public_html
           cp -r dist/* deploy/public_html/
 
-      - name: 🧹 Remove uppercase Posters folder from server
-        run: |
-          curl --ftp-ssl --insecure -u "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" \
-            "ftps://${{ secrets.FTP_SERVER }}:21" \
-            -Q "-RMD public_html/Posters" || true
-
       - name: 🚀 Sync to cPanel via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
