@@ -42,9 +42,4 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
-            **/board_intro_assets/**
-            **/Sanya_assets/**
-            **/ResearchOverview_assets/**
-            **/OCIS_assets/**
-            **/SPO_assets/**
             **/.DS_Store
