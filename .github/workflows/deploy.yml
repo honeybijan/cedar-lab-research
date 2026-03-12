@@ -25,7 +25,7 @@ jobs:
           npm run build
 
       - name: 🚀 Sync to cPanel via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -40,8 +40,9 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
-            presentations/board_intro_assets/**
-            presentations/Sanya_assets/**
-            presentations/ResearchOverview_assets/**
-            presentations/OCIS_assets/**
-            presentations/SPO_assets/**
+            **/board_intro_assets/**
+            **/Sanya_assets/**
+            **/ResearchOverview_assets/**
+            **/OCIS_assets/**
+            **/SPO_assets/**
+            **/.DS_Store
