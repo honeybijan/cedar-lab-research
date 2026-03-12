@@ -39,8 +39,3 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
-            presentations/board_intro_assets/**
-            presentations/Sanya_assets/**
-            presentations/ResearchOverview_assets/**
-            presentations/OCIS_assets/**
-            presentations/SPO_assets/**
