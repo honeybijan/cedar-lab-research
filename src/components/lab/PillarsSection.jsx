@@ -22,7 +22,7 @@ const PILLARS = [
     ],
   },
   {
-    title: "Recourse",
+    title: "AI Recourse",
     subtitle: "Counterfactual frameworks for AI fairness, privacy, and model-sharing.",
     questions: [
       "Can we uncover and correct fundamental flaws in current data-processing standards?",
