@@ -17,7 +17,7 @@ export default function Footer() {
         </p>
         <div className="w-8 h-[1px] mx-auto my-6" style={{ background: '#2E2820' }} />
         <p className="text-xs" style={{ color: '#5A4E42' }}>
-          Causality for Experimentation, Discovery, and Recourse
+          Causality for Experimentation, Detection, and AI Recourse
         </p>
         
         {/* Dartmouth D-Pine Logo */}
