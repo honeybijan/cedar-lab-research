@@ -39,7 +39,7 @@ export default function FundingSection() {
               >
                 {/* Agency · Program badge row */}
                 <div className="flex items-center gap-1.5 flex-wrap">
-                  <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#5FD99F' }}>{f.agency}</span>
+                  <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#E0B888' }}>{f.agency}</span>
                   {f.program && (
                     <>
                       <span className="text-xs" style={{ color: '#5A4E42' }}>·</span>
