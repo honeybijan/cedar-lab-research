@@ -27,7 +27,7 @@ export default function ProjectsSection() {
           </span>
           <h2 className="text-3xl sm:text-4xl font-light tracking-tight mt-4" style={{ color: '#F0EAE0' }}>
             Active{" "}
-            <span className="font-semibold" style={{ color: '#D9A578' }}>Projects</span>
+            <span className="font-semibold" style={{ color: '#E0B088' }}>Projects</span>
           </h2>
           <div className="w-12 h-[1px] mx-auto mt-6" style={{ background: '#3A3228' }} />
         </motion.div>

@@ -5,7 +5,7 @@ import { PI, ADMIN_STAFF, PHD_STUDENTS, UNDERGRAD_STUDENTS, ALUMNI, COLLABORATOR
 
 function SectionLabel({ children }) {
   return (
-    <p className="text-xs font-semibold tracking-[0.25em] uppercase mb-6" style={{ color: '#D9A578' }}>
+    <p className="text-xs font-semibold tracking-[0.25em] uppercase mb-6" style={{ color: '#E0B088' }}>
       {children}
     </p>
   );
@@ -30,7 +30,7 @@ export default function PeopleSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#D9A578' }}>
+          <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#E0B088' }}>
             The Team
           </span>
           <h2 className="text-3xl sm:text-4xl font-light tracking-tight mt-4" style={{ color: '#F0EAE0' }}>
@@ -69,7 +69,7 @@ export default function PeopleSection() {
                 <div className="flex flex-wrap gap-3 mt-4">
                   {PI.email && (
                     <a href={`mailto:${PI.email}`} className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors hover:opacity-80"
-                      style={{ backgroundColor: '#2E2820', color: '#D9A578' }}>
+                      style={{ backgroundColor: '#2E2820', color: '#E0B088' }}>
                       <Mail className="w-3 h-3" /> Email
                     </a>
                   )}
@@ -94,7 +94,7 @@ export default function PeopleSection() {
                   {PI.cv && (
                     <a href={PI.cv} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors hover:opacity-80"
                       style={{ backgroundColor: 'rgba(61,158,107,0.12)', color: '#3D9E6B' }}>
-                      <FileText className="w-3 h-3" /> CV
+                      <FileText className="w-3 h-3" /> CV (PDF)
                     </a>
                   )}
                 </div>
@@ -119,7 +119,7 @@ export default function PeopleSection() {
                 <p className="text-sm" style={{ color: '#A09080' }}>{person.title}</p>
                 {person.email && (
                   <a href={`mailto:${person.email}`} className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors hover:opacity-80 w-fit"
-                    style={{ backgroundColor: '#2E2820', color: '#D9A578' }}>
+                    style={{ backgroundColor: '#2E2820', color: '#E0B088' }}>
                     <Mail className="w-3 h-3" /> Email
                   </a>
                 )}

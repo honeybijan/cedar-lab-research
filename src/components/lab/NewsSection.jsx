@@ -20,7 +20,7 @@ export default function NewsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#D9A578' }}>
+          <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#E0B088' }}>
             Announcements
           </span>
           <h2 className="text-3xl sm:text-4xl font-light tracking-tight mt-4" style={{ color: '#F0EAE0' }}>
@@ -47,7 +47,7 @@ export default function NewsSection() {
                   >
                     {/* dot */}
                     <div className="absolute -left-7 top-1.5 w-2 h-2 rounded-full" style={{ backgroundColor: '#3D9E6B' }} />
-                    <p className="text-xs font-medium tracking-wide mb-1" style={{ color: '#D9A578' }}>{item.date}</p>
+                    <p className="text-xs font-medium tracking-wide mb-1" style={{ color: '#E0B088' }}>{item.date}</p>
                     <p className="text-sm font-medium" style={{ color: '#F0EAE0' }}>{item.title}</p>
                     {item.description && (
                       <p className="text-sm mt-1" style={{ color: '#A09080' }}>{item.description}</p>
@@ -61,7 +61,7 @@ export default function NewsSection() {
               <button
                 onClick={() => setExpanded(!expanded)}
                 className="mt-10 flex items-center gap-2 text-xs font-medium mx-auto transition-opacity hover:opacity-70"
-                style={{ color: '#D9A578' }}
+                style={{ color: '#E0B088' }}
               >
                 {expanded ? (
                   <><ChevronUp className="w-4 h-4" /> Show less</>

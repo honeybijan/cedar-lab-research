@@ -39,31 +39,31 @@ export default function FundingSection() {
               >
                 {/* Agency · Program badge row */}
                 <div className="flex items-center gap-1.5 flex-wrap">
-                  <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#3D9E6B' }}>{f.agency}</span>
+                  <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#E0B088' }}>{f.agency}</span>
                   {f.program && (
                     <>
-                      <span className="text-xs" style={{ color: '#3A3228' }}>·</span>
+                      <span className="text-xs" style={{ color: '#5A4E42' }}>·</span>
                       {f.url ? (
                         <a href={f.url} target="_blank" rel="noopener noreferrer"
-                          className="text-xs font-semibold tracking-widest uppercase hover:underline" style={{ color: '#A09080' }}>
+                          className="text-xs font-semibold tracking-widest uppercase hover:underline" style={{ color: '#E8DFD0' }}>
                           {f.program}
                         </a>
                       ) : (
-                        <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#A09080' }}>{f.program}</span>
+                        <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#E8DFD0' }}>{f.program}</span>
                       )}
                     </>
                   )}
                   {f.mechanism && (
-                    <>
-                      <span className="text-xs" style={{ color: '#3A3228' }}>·</span>
-                      <span className="text-xs" style={{ color: '#5A4E42' }}>{f.mechanism}</span>
-                    </>
+                   <>
+                     <span className="text-xs" style={{ color: '#5A4E42' }}>·</span>
+                     <span className="text-xs" style={{ color: '#9A8E82' }}>{f.mechanism}</span>
+                   </>
                   )}
-                </div>
-                {/* Title */}
-                <p className="text-sm leading-snug" style={{ color: '#C8BAA8' }}>{f.title}</p>
-                {/* Grant number */}
-                {f.grant && <p className="text-xs" style={{ color: '#5A4E42' }}>{f.grant}</p>}
+                  </div>
+                  {/* Title */}
+                  <p className="text-sm leading-snug" style={{ color: '#C8BAA8' }}>{f.title}</p>
+                  {/* Grant number */}
+                  {f.grant && <p className="text-xs" style={{ color: '#8A7E72' }}>{f.grant}</p>}
 
               </motion.div>
             ))}

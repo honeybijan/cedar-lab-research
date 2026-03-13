@@ -33,7 +33,7 @@ export default function HeroSection() {
             </a>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight mb-2" style={{ color: '#F0EAE0' }}>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight mb-2" style={{ color: '#E8DFD0' }}>
             The{" "}
             <span className="font-semibold" style={{ color: '#3D9E6B' }}>CEDAR</span>
             {" "}Lab

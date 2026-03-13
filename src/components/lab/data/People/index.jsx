@@ -8,7 +8,7 @@ export const PI = {
   scholar: "https://scholar.google.com/citations?user=DXEdM48AAAAJ&hl=en",
   github: "https://github.com/honeybijan",
   linkedin: "https://www.linkedin.com/in/bijan-mazaheri-422b36111/",
-  cv: "https://bijanmazaheri.com/uploads/bijanmazaheri_cv.pdf",
+  cv: "https://bijanmazaheri.com/bijanmazaheri_cv.pdf",
   photo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69a06131335d4d0b4fc95ea9/cb4761851_20251114-Bijan-Mazaheri-kl-18.jpg",
 };
 
