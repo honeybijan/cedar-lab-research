@@ -22,12 +22,12 @@ export default function ProjectsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#3D9E6B' }}>
+          <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#E0B088' }}>
             Current Work
           </span>
           <h2 className="text-3xl sm:text-4xl font-light tracking-tight mt-4" style={{ color: '#F0EAE0' }}>
             Active{" "}
-            <span className="font-semibold" style={{ color: '#E0B088' }}>Projects</span>
+            <span className="font-semibold" style={{ color: '#3D9E6B' }}>Projects</span>
           </h2>
           <div className="w-12 h-[1px] mx-auto mt-6" style={{ background: '#3A3228' }} />
         </motion.div>
