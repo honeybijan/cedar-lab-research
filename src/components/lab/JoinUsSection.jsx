@@ -79,7 +79,7 @@ export default function JoinUsSection() {
                 <p className="text-sm font-medium leading-snug group-hover:text-green-400 transition-colors" style={{ color: '#F0EAE0' }}>
                   {p.name}
                 </p>
-                <p className="text-xs mt-2" style={{ color: '#7A6E62' }}>{p.description}</p>
+                <p className="text-xs mt-2" style={{ color: '#A09080' }}>{p.description}</p>
               </motion.a>
             ))}
           </div>

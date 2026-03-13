@@ -54,16 +54,16 @@ export default function FundingSection() {
                     </>
                   )}
                   {f.mechanism && (
-                    <>
-                      <span className="text-xs" style={{ color: '#3A3228' }}>·</span>
-                      <span className="text-xs" style={{ color: '#5A4E42' }}>{f.mechanism}</span>
-                    </>
+                   <>
+                     <span className="text-xs" style={{ color: '#3A3228' }}>·</span>
+                     <span className="text-xs" style={{ color: '#8A7E72' }}>{f.mechanism}</span>
+                   </>
                   )}
-                </div>
-                {/* Title */}
-                <p className="text-sm leading-snug" style={{ color: '#C8BAA8' }}>{f.title}</p>
-                {/* Grant number */}
-                {f.grant && <p className="text-xs" style={{ color: '#5A4E42' }}>{f.grant}</p>}
+                  </div>
+                  {/* Title */}
+                  <p className="text-sm leading-snug" style={{ color: '#C8BAA8' }}>{f.title}</p>
+                  {/* Grant number */}
+                  {f.grant && <p className="text-xs" style={{ color: '#8A7E72' }}>{f.grant}</p>}
 
               </motion.div>
             ))}

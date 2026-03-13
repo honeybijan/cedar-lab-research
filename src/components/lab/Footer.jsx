@@ -12,11 +12,11 @@ export default function Footer() {
         <p className="text-2xl font-light tracking-tight mb-2" style={{ color: '#F0EAE0' }}>
           The <span className="font-semibold" style={{ color: '#3D9E6B' }}>CEDAR</span> Lab
         </p>
-        <p className="text-sm tracking-wide" style={{ color: '#7A6E62' }}>
+        <p className="text-sm tracking-wide" style={{ color: '#A09080' }}>
           Thayer School of Engineering at Dartmouth
         </p>
         <div className="w-8 h-[1px] mx-auto my-6" style={{ background: '#2E2820' }} />
-        <p className="text-xs" style={{ color: '#5A4E42' }}>
+        <p className="text-xs" style={{ color: '#8A7E72' }}>
           Causality for Experimentation, Detection, and AI Recourse
         </p>
         
