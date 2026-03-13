@@ -51,7 +51,7 @@ export default function PeopleSection() {
           <div className="rounded-2xl border p-6 sm:p-8" style={{ borderColor: '#2E2820', backgroundColor: '#181510' }}>
             <div className="flex flex-col sm:flex-row sm:items-start gap-6">
               <div className="w-56 h-56 rounded-xl flex-shrink-0 overflow-hidden"
-                style={{ border: '2px solid #C4834A', boxShadow: '0 0 0 3px rgba(196,131,74,0.15)' }}>
+                style={{ border: '1px solid rgba(196,131,74,0.4)' }}>
                 <img
                   src={PI.photo}
                   alt="Professor Bijan Mazaheri at a classroom chalkboard demonstrating statistical concepts"
