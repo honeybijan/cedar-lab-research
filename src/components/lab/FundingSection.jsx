@@ -45,11 +45,11 @@ export default function FundingSection() {
                       <span className="text-xs" style={{ color: '#5A4E42' }}>·</span>
                       {f.url ? (
                         <a href={f.url} target="_blank" rel="noopener noreferrer"
-                          className="text-xs font-semibold tracking-widest uppercase hover:underline" style={{ color: '#B8AA98' }}>
+                          className="text-sm font-semibold tracking-widest uppercase hover:underline" style={{ color: '#B8AA98' }}>
                           {f.program}
                         </a>
                       ) : (
-                        <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#B8AA98' }}>{f.program}</span>
+                        <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#B8AA98' }}>{f.program}</span>
                       )}
                     </>
                   )}
