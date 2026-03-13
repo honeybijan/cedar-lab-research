@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { motion } from "framer-motion";
-import { FileText, ImageIcon, Video, Copy, Check, SlidersHorizontal } from "lucide-react";
+import { FileText, ImageIcon, Video, Copy, Check, Presentation } from "lucide-react";
 import { PUBLICATIONS, PREPRINTS } from "./data/Papers/index";
 
 const PREVIEW_COUNT = 4; // number of papers shown before "show more"
@@ -83,7 +83,7 @@ function PaperCard({ paper, index }) {
               style={{ backgroundColor: '#2E2820', color: '#A09080' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#C8BAA8'}
               onMouseLeave={(e) => e.currentTarget.style.color = '#A09080'}>
-              <ImageIcon className="w-3 h-3" /> Poster
+              <ImageIcon className="w-3 h-3" /> Poster (PDF)
             </a>
           )}
           {paper.slides && (
@@ -92,7 +92,7 @@ function PaperCard({ paper, index }) {
               style={{ backgroundColor: '#2E2820', color: '#A09080' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#C8BAA8'}
               onMouseLeave={(e) => e.currentTarget.style.color = '#A09080'}>
-              <SlidersHorizontal className="w-3 h-3" /> Slides
+              <Presentation className="w-3 h-3" /> Slides (PDF)
             </a>
           )}
           {paper.talk && (
