@@ -39,17 +39,17 @@ export default function FundingSection() {
               >
                 {/* Agency · Program badge row */}
                 <div className="flex items-center gap-1.5 flex-wrap">
-                  <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#E0B088' }}>{f.agency}</span>
+                  <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#E0B088' }}>{f.agency}</span>
                   {f.program && (
                     <>
                       <span className="text-xs" style={{ color: '#5A4E42' }}>·</span>
                       {f.url ? (
                         <a href={f.url} target="_blank" rel="noopener noreferrer"
-                          className="text-sm font-semibold tracking-widest uppercase hover:underline" style={{ color: '#F0EAE0' }}>
+                          className="text-xs font-semibold tracking-widest uppercase hover:underline" style={{ color: '#F0EAE0' }}>
                           {f.program}
                         </a>
                       ) : (
-                        <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#F0EAE0' }}>{f.program}</span>
+                        <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: '#F0EAE0' }}>{f.program}</span>
                       )}
                     </>
                   )}
