@@ -94,7 +94,7 @@ export default function PeopleSection() {
                   {PI.cv && (
                     <a href={PI.cv} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-colors hover:opacity-80"
                       style={{ backgroundColor: 'rgba(61,158,107,0.12)', color: '#3D9E6B' }}>
-                      <FileText className="w-3 h-3" /> CV
+                      <FileText className="w-3 h-3" /> CV (PDF)
                     </a>
                   )}
                 </div>
