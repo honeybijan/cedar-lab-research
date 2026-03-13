@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +9,7 @@
   body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background-color: #111009;
-    color: #F0EAE0;
+    color: #E8DFD0;
   }
 }
 
