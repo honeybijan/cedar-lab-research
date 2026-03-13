@@ -92,7 +92,7 @@ function PaperCard({ paper, index }) {
               style={{ backgroundColor: '#2E2820', color: '#A09080' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#C8BAA8'}
               onMouseLeave={(e) => e.currentTarget.style.color = '#A09080'}>
-              <Presentation className="w-3 h-3" /> Slides (PDF)
+              <Presentation className="w-3 h-3" /> Slides
             </a>
           )}
           {paper.talk && (
