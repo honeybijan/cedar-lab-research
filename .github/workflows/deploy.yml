@@ -3,7 +3,7 @@ name: Build and Deploy to cPanel
 on:
   push:
     branches:
-      - main  # This triggers the deploy every time you push to 'main'
+      - main
 
 jobs:
   build-and-deploy:
