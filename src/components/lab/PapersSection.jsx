@@ -117,7 +117,7 @@ function PaperGroup({ title, papers }) {
 
   return (
     <div className="mb-16">
-      <p className="text-xs font-semibold tracking-[0.25em] uppercase mb-6" style={{ color: '#D9A578' }}>
+      <p className="text-xs font-semibold tracking-[0.25em] uppercase mb-6" style={{ color: '#E0B088' }}>
         {title}
       </p>
       {papers.length === 0 ? (
@@ -131,7 +131,7 @@ function PaperGroup({ title, papers }) {
             <button
               onClick={() => setExpanded(!expanded)}
               className="mt-6 flex items-center gap-2 text-xs font-medium transition-opacity hover:opacity-70"
-              style={{ color: '#D9A578' }}
+              style={{ color: '#E0B088' }}
             >
               {expanded ? (
                 <><ChevronUp className="w-4 h-4" /> Show less</>
@@ -157,7 +157,7 @@ export default function PapersSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#D9A578' }}>
+          <span className="text-xs font-semibold tracking-[0.3em] uppercase" style={{ color: '#E0B088' }}>
             Research Output
           </span>
           <h2 className="text-3xl sm:text-4xl font-light tracking-tight mt-4" style={{ color: '#F0EAE0' }}>
