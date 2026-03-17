@@ -29,8 +29,8 @@ export const PUBLICATIONS = [
     authors: "Spencer Gordon, Eric Jahn, Bijan Mazaheri, Yuval Rabani, Leonard J Schulman",
     venue: "COLT",
     year: 2024,
-    url: "https://arxiv.org/abs/2309.13993",
-    paper: "https://arxiv.org/abs/2309.13993",
+    url: "https://proceedings.mlr.press/v247/gordon24a.html",
+    paper: "https://proceedings.mlr.press/v247/gordon24a.html",
   },
   {
     title: "Causal Information Splitting: Engineering Proxy Features for Robustness to Distribution Shifts",
@@ -110,6 +110,8 @@ export const PREPRINTS = [
     authors: "Mateusz Gajewski, Sophia Xiao, Bijan Mazaheri",
     venue: "Under Review",
     year: 2026,
+    url: "https://arxiv.org/abs/2603.15335",
+    paper: "https://arxiv.org/abs/2603.15335",
   },
   {
     title: "Relaxing Faithfulness with Intervention-Only Causal Discovery",
