@@ -17,7 +17,7 @@ export const PROJECTS = [
   {
     title: "Causal Masking",
     order: 2,
-    description: "We often need to understand how specific information influences decision-making. Because data is frequently entangled, determining whether a decision relies on a direct attribute or a correlated feature is notoriously difficult. In fact, this is an **information-theoretically** hard problem due to the complexities of testing for conditional independence. We are actively researching this challenge, with applications in algorithmic fairness and the detection of covert decision-making.",
+    description: "We often need to understand how specific information influences decision-making. Examples include fair and covert decision-making, where information either should not be used or its use should not be detected. Determining whether a decision relies on a direct attribute or a correlated feature is notoriously difficult. We have shown optimizers can exploit this difficulty by hiding unfair decisions in hard-to-detect conditional dependencies. This means that prohibitions on average dependence do not prevent overall dependence, but they do make it hard to detect. Paradoxically, we have found that imposing ATE-based fairness constraints can lead to unfair solutions that persist undetected for much longer, resulting in far more unfair treatment.",
     paperTitles: [
       "Masked Unfairness: Hiding Causality in Zero ATE",
     ],
