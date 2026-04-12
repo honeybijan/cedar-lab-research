@@ -22,7 +22,7 @@ export const ADMIN_STAFF = [
 // To add a PhD student: { name, research }
 export const PHD_STUDENTS = [
   { name: "Sophia Xiao", research: "Thayer School of Engineering, Dartmouth" },
-  { name: "Zou Yang", research: "Thayer School of Engineering, Dartmouth" },
+  { name: "Zou Yang", research: "Thayer School of Engineering, Dartmouth" }
 ];
 
 // ── UNDERGRADUATE STUDENTS ────────────────────────────────────────────────────
@@ -35,6 +35,8 @@ export const UNDERGRAD_STUDENTS = [
   { name: "Benjamin Cavanagh" },
   { name: "Sreshth Tiwari" },
   { name: "Tamier Baoyin" },
+  { name: "Youmi Ji" },
+  { name: "Keion Grieve" },
 ];
 
 // ── ALUMNI ────────────────────────────────────────────────────────────────────

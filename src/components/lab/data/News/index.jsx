@@ -3,6 +3,21 @@
 
 export const NEWS = [
   {
+    date: "April 2026",
+    title: '"Masked Unfairness: Hiding Causality in Zero ATE" has been accepted into the CauScale Workshop at AISTATS.',
+    description: "The work was selected for a spotlight presentation. Congratulations to Zou Yang and Sophia Xiao!",
+  },
+  {
+    date: "April 2026",
+    title: "Keion Grieve, Youmi Ji, and Caroline Krantz join the CEDAR Lab as URAD undergraduate researchers.",
+    description: "Welcome to the group!",
+  },
+  {
+    date: "April 2026",
+    title: "The CEDAR Lab attends CLeaR 2026, with Prof. Bijan Mazaheri serving as a Program Chair.",
+    description: "We had a fun three days of talks and workshops on causality and machine learning at MIT!",
+  },
+  {
     date: "February 2026",
     title: "CEDAR Lab goes ice skating at Lake Morey with the Gallivan Group.",
   },
