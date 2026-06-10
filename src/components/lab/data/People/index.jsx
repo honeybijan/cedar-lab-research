@@ -29,7 +29,6 @@ export const PHD_STUDENTS = [
 // ── UNDERGRADUATE STUDENTS ────────────────────────────────────────────────────
 // To add an undergrad: { name, research (optional) }
 export const UNDERGRAD_STUDENTS = [
-  { name: "Caroline Krantz" },
   { name: "Muhammad Ahmad" },
   { name: "Hailey King" },
   { name: "Benjamin Cavanagh" },
@@ -43,6 +42,7 @@ export const UNDERGRAD_STUDENTS = [
 // To add an alum: { name }
 export const ALUMNI = [
   { name: "Ruchita Nair" },
+  { name: "Caroline Krantz" },
   { name: "Keion Grieve" },
   { name: "Sreshth Tiwari" },
   { name: "Connor Kilkenny" },
