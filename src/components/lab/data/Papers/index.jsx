@@ -116,13 +116,13 @@ export const PREPRINTS = [
   {
     title: "Relaxing Faithfulness with Intervention-Only Causal Discovery",
     authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
-    venue: "Under Review",
+    venue: "Under Review, Accepted to UAI 2026",
     year: 2025,
   },
   {
     title: "Meta-Dependence in Conditional Independence Testing",
     authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
-    venue: "arXiv:2504.12594, Under Review",
+    venue: "arXiv:2504.12594, Accepted to UAI 2026",
     year: 2025,
     url: "https://arxiv.org/abs/2504.12594",
     paper: "https://arxiv.org/abs/2504.12594",
@@ -130,7 +130,7 @@ export const PREPRINTS = [
   {
     title: "Causal Discovery under Latent Class Confounding",
     authors: "Bijan Mazaheri, Spencer Gordon, Yuval Rabani, Leonard Schulman",
-    venue: "arXiv:2311.07454, Under Review",
+    venue: "arXiv:2311.07454, Accepted to UAI 2026",
     year: 2025,
     url: "https://arxiv.org/abs/2311.07454",
     paper: "https://arxiv.org/abs/2311.07454",
