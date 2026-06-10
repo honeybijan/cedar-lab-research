@@ -3,6 +3,16 @@
 
 export const NEWS = [
   {
+    date: "June 2026",
+    title: "Haley Lin (Williams College) and Rafael Castro (Caltech) are joining the CEDAR Lab this summer!",
+    description: "Welcome to the group!",
+  },
+  {
+    date: "June 2026",
+    title: "The CEDAR Lab has had three papers accepted to UAI 2026!",
+    description: "Congratulations to all involved!",
+  },
+  {
     date: "April 2026",
     title: '"Masked Unfairness: Hiding Causality in Zero ATE" has been accepted into the CauScale Workshop at AISTATS.',
     description: "The work was selected for a spotlight presentation. Congratulations to Zou Yang and Sophia Xiao!",
