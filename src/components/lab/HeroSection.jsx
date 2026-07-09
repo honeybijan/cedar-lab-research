@@ -46,7 +46,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
           <p className="text-base sm:text-lg md:text-xl font-light tracking-wide mt-4 mb-10" style={{ color: '#D9A578' }}>
-            Causality for Experimentation, Detection, and AI Recourse
+            Causality for Experimental Design, Abduction, and Recourse
           </p>
         </motion.div>
 
@@ -57,10 +57,7 @@ export default function HeroSection() {
         >
           <div className="w-12 h-[1px] mx-auto mb-10" style={{ background: '#3A3228' }} />
           <p className="text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-light" style={{ color: '#C8BAA8' }}>
-            Our lab investigates the information-theoretic limits of causal relationships and how they are stored within modern AI architectures. By bridging theoretical computer science and causal 
-            inference, we study how to design optimal experiments, detect hidden structure in heterogeneous populations, 
-            and build tools for algorithmic fairness and reproducibility that remain valid even when data 
-            or models must stay private.
+            Averages are for prediction; the tails are for understanding. The information that lets us tell cause from effect, form a genuinely new hypothesis, or expose hidden unfairness does not live in a distribution's mean. It lives in the higher-order, non-Gaussian structure that both classical statistics and modern AI are built to average away. The CEDAR Lab works at the interface of theoretical computer science and causal inference to study the lifecycle of that information: we design the fewest, most informative experiments and coarsest faithful simulations that pin a system down; we read the anomalies they surface for the hypotheses behind them; and we regulate the resulting knowledge so that fairness and privacy hold as guarantees rather than hopes. Throughout, we ask what the fundamental limits of causal information recovery tell us about science, AI, and society.
           </p>
         </motion.div>
 

@@ -4,48 +4,30 @@ import PillarCard from "./PillarCard";
 
 const PILLARS = [
   {
-    title: "Experimentation",
-    subtitle: "Theoretical design of optimal and efficient perturbations for system discovery.",
+    title: "Experimental Design",
+    subtitle: "The fewest, most informative perturbations and coarsest faithful simulations that pin down a system.",
     questions: [
-      "How can we make scientific discovery more efficient?",
-      "How do we maximize the informational utility in our experiments?",
-      "How can we integrate scientific discoveries into ML and AI pipelines?",
+      "What is the smallest basis of interventions or simulations from which the outcomes of experiments we never run can be inferred?",
+      "When can a fine-grained simulation be coarse-grained without changing its causal answers, and can we use this to accelerate simulations for real-time decision making?",
+      "How can we use causal structure to maximize scientific information under a budget?",
     ],
   },
   {
-    title: "Detection",
-    subtitle: "Unmasking causal heterogeneity and obscured stories in mixture models.",
+    title: "Abduction",
+    subtitle: "Abduction is the leap from a surprising observation to the hypothesis that best explains it. Causal reasoning comes from detecting anomalies, and creativity comes from generating them.",
     questions: [
-      "How can we detect and quantify heterogeneous populations to identify bad actors or emerging diseases?",
-      "When do causal mixture models reveal — or obscure — the true source of an observed signal?",
-      "What distinguishes population-level rates of AI use, crime, or corruption from individual-level attribution?",
+      "How do outliers and anomalies help us reason about causal dependencies?",
+      "Can we build creative AI that reasons from outliers and protects against risky anomalies?",
+      "What do heterogeneous populations and mixtures reveal, or obscure, about the true source of a signal: a bad actor, an emerging disease, or a batch effect masquerading as biology?",
     ],
   },
   {
-    title: "AI Recourse",
-    subtitle: "Counterfactual frameworks for AI fairness, privacy, and model-sharing.",
+    title: "Recourse",
+    subtitle: "Fairness, privacy, and information flow are hard to enforce in optimized systems like AI, and easy to exploit.",
     questions: [
-      "Can we uncover and correct fundamental flaws in current data-processing standards?",
-      "What counterfactual guarantees can we provide for algorithmic fairness?",
-      "How can we address the reproducibility crisis without exposing private data or proprietary models?",
-    ],
-  },
-  {
-    title: "Synthesis",
-    subtitle: "Comparing and correcting for batch effects across disparate data sources.",
-    questions: [
-      "How can we disentangle experimental artifacts from true scientific signal?",
-      "What methods reliably correct for batch effects without distorting causal dependencies?",
-      "How do we quantify human performance in highly variable environments?",
-    ],
-  },
-  {
-    title: "Fundamentals",
-    subtitle: "Establishing the universal limits of causal information recovery.",
-    questions: [
-      "What do the fundamental limitations of causal inference tell us about science and economics?",
-      "How do errors across distinct causal questions co-occur and interact?",
-      "How much data is needed to learn different causal quantities, and how can this be exploited?",
+      "Privacy and fairness are conditional-independence constraints; how do we enforce them so a system cannot game or evade them, even when they appear satisfied on the data we can see?",
+      "What provable guarantees can we give an individual, not just a population, about how an AI system will and will not use their information?",
+      "How can we detect bad actors who use AI to avoid detection, or who exploit privacy and fairness protections to escape scrutiny?",
     ],
   },
 ];
@@ -65,7 +47,7 @@ export default function PillarsSection() {
             Research Branches
           </span>
           <h2 className="text-3xl sm:text-4xl font-light tracking-tight mt-4" style={{ color: '#F0EAE0' }}>
-            Five Branches of{" "}
+            Three Branches of{" "}
             <span className="font-semibold" style={{ color: '#3D9E6B' }}>CEDAR</span>
           </h2>
           <div className="w-12 h-[1px] mx-auto mt-6" style={{ background: '#3A3228' }} />
