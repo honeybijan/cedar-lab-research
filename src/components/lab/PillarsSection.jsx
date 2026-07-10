@@ -89,8 +89,7 @@ export default function PillarsSection() {
             viewBox="0 0 680 210"
             role="group"
             aria-label="CEDAR research tree"
-            className="w-full h-auto"
-            style={{ display: 'block' }}
+            className="hidden md:block w-full h-auto"
           >
             {BRANCHES.map((b) => {
               const on = b.key === selectedKey;
@@ -145,6 +144,69 @@ export default function PillarsSection() {
                     fontSize="13"
                     initial={false}
                     animate={{ fill: on ? '#F0EAE0' : '#7A6E62' }}
+                    transition={{ duration: 0.25 }}
+                    style={{ fontFamily: 'inherit' }}
+                  >
+                    {b.title}
+                  </motion.text>
+                </g>
+              );
+            })}
+          </svg>
+
+          <svg
+            viewBox="0 0 340 280"
+            role="group"
+            aria-label="CEDAR research tree"
+            className="block md:hidden w-full h-auto"
+          >
+            <line x1="40" y1="50" x2="40" y2="236" stroke="#C4834A" strokeWidth="2" strokeLinecap="round" opacity="0.5" />
+            <circle cx="40" cy="40" r="5" fill="#C4834A" />
+            <text x="54" y="44" fontSize="13" letterSpacing="1.5" fill="#C4834A" style={{ fontFamily: 'inherit' }}>
+              CAUSALITY
+            </text>
+            {BRANCHES.map((b, i) => {
+              const on = b.key === selectedKey;
+              const y = 96 + i * 70;
+              const path = `M 40 ${y - 18} C 52 ${y - 6} 66 ${y} 78 ${y}`;
+              return (
+                <g
+                  key={b.key}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={b.title}
+                  aria-pressed={on}
+                  onClick={() => setSelectedKey(b.key)}
+                  onKeyDown={(e) => handleKeyDown(e, b.key)}
+                  style={{ cursor: 'pointer', outline: 'none' }}
+                >
+                  <rect x="8" y={y - 28} width="324" height="56" fill="transparent" />
+                  <motion.path
+                    d={path}
+                    fill="none"
+                    strokeLinecap="round"
+                    initial={false}
+                    animate={{
+                      stroke: on ? b.color : '#3A3228',
+                      strokeWidth: on ? 3 : 1.5,
+                      opacity: on ? 1 : 0.6,
+                    }}
+                    transition={{ duration: 0.3, ease: EASE }}
+                  />
+                  <motion.circle
+                    cx={78}
+                    cy={y}
+                    fill={b.color}
+                    initial={false}
+                    animate={{ r: on ? 12 : 8, opacity: on ? 1 : 0.4 }}
+                    transition={{ duration: 0.25, ease: EASE }}
+                  />
+                  <motion.text
+                    x={100}
+                    y={y + 5}
+                    fontSize="15"
+                    initial={false}
+                    animate={{ fill: on ? '#F0EAE0' : '#A09080' }}
                     transition={{ duration: 0.25 }}
                     style={{ fontFamily: 'inherit' }}
                   >
