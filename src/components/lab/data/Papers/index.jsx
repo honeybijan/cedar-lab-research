@@ -6,7 +6,7 @@ export const PUBLICATIONS = [
   {
     title: "Relaxing Faithfulness with Intervention-Only Causal Discovery",
     authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
-    venue: "Accepted to UAI 2026",
+    venue: "Accepted to UAI",
     url: "https://arxiv.org/abs/2607.11816",
     paper: "https://arxiv.org/abs/2607.11816",
     year: 2026,
@@ -14,7 +14,7 @@ export const PUBLICATIONS = [
   {
     title: "Meta-Dependence in Conditional Independence Testing",
     authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
-    venue: "Accepted to UAI 2026",
+    venue: "Accepted to UAI",
     year: 2026,
     url: "https://arxiv.org/abs/2504.12594",
     paper: "https://arxiv.org/abs/2504.12594",
@@ -22,7 +22,7 @@ export const PUBLICATIONS = [
   {
     title: "Causal Discovery in Mixtures of Populations",
     authors: "Bijan Mazaheri, Spencer Gordon, Yuval Rabani, Leonard Schulman",
-    venue: "Accepted to UAI 2026",
+    venue: "Accepted to UAI",
     year: 2026,
     url: "https://arxiv.org/abs/2311.07454",
     paper: "https://arxiv.org/abs/2311.07454",
