@@ -4,6 +4,30 @@
 
 export const PUBLICATIONS = [
   {
+    title: "Relaxing Faithfulness with Intervention-Only Causal Discovery",
+    authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
+    venue: "Accepted to UAI 2026",
+    url: "https://arxiv.org/abs/2607.11816",
+    paper: "https://arxiv.org/abs/2607.11816",
+    year: 2026,
+  },
+  {
+    title: "Meta-Dependence in Conditional Independence Testing",
+    authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
+    venue: "Accepted to UAI 2026",
+    year: 2026,
+    url: "https://arxiv.org/abs/2504.12594",
+    paper: "https://arxiv.org/abs/2504.12594",
+  },
+  {
+    title: "Causal Discovery in Mixtures of Populations",
+    authors: "Bijan Mazaheri, Spencer Gordon, Yuval Rabani, Leonard Schulman",
+    venue: "Accepted to UAI 2026",
+    year: 2026,
+    url: "https://arxiv.org/abs/2311.07454",
+    paper: "https://arxiv.org/abs/2311.07454",
+  },
+  {
     title: "Synthetic Potential Outcomes and Causal Mixture Identifiability",
     authors: "Bijan Mazaheri, Chandler Squires, Caroline Uhler",
     venue: "AISTATS",
@@ -90,6 +114,14 @@ export const PUBLICATIONS = [
 
 export const PREPRINTS = [
   {
+    title: "The Spectral Structure of Latent Treatment Effects",
+    authors: "Hamza Virk, Bijan Mazaheri, Yihren Wu",
+    venue: "arXiv: 2607.10926",
+    year: 2026,
+    url: "https://arxiv.org/abs/2607.10926",
+    paper: "https://arxiv.org/abs/2607.10926",
+  },
+  {
     title: "Estimating Aleatoric Uncertainty in the Causal Treatment Effect",
     authors: "Liyuan Xu, Bijan Mazaheri",
     venue: "Under Review",
@@ -112,28 +144,6 @@ export const PREPRINTS = [
     year: 2026,
     url: "https://arxiv.org/abs/2603.15335",
     paper: "https://arxiv.org/abs/2603.15335",
-  },
-  {
-    title: "Relaxing Faithfulness with Intervention-Only Causal Discovery",
-    authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
-    venue: "Under Review, Accepted to UAI 2026",
-    year: 2025,
-  },
-  {
-    title: "Meta-Dependence in Conditional Independence Testing",
-    authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
-    venue: "arXiv:2504.12594, Accepted to UAI 2026",
-    year: 2025,
-    url: "https://arxiv.org/abs/2504.12594",
-    paper: "https://arxiv.org/abs/2504.12594",
-  },
-  {
-    title: "Causal Discovery under Latent Class Confounding",
-    authors: "Bijan Mazaheri, Spencer Gordon, Yuval Rabani, Leonard Schulman",
-    venue: "arXiv:2311.07454, Accepted to UAI 2026",
-    year: 2025,
-    url: "https://arxiv.org/abs/2311.07454",
-    paper: "https://arxiv.org/abs/2311.07454",
   },
   {
     title: "The Sparse Hausdorff Moment Problem, with Application to Topic Models",
