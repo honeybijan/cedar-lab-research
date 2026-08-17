@@ -26,20 +26,9 @@ jobs:
           mkdir -p deploy/public_html
           cp -r dist/* deploy/public_html/
 
-      - name: 🚀 Sync to cPanel via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: ./deploy/
-          server-dir: /
-          dangerous-clean-slate: false
-          timeout: 60000
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.DS_Store
+      - name: 🚀 Sync to cPanel via SFTP
+        run: |
+          sudo apt-get install -y lftp
+          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
+            sftp://${{ secrets.FTP_SERVER }} \
+            -e "set sftp:auto-confirm yes; set net:timeout 60; mirror -R deploy/ /; quit"
