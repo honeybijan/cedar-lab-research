@@ -4,10 +4,17 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+# Stops two deploys from fighting over the same SFTP session
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: 🚚 Checkout Code
@@ -26,9 +33,27 @@ jobs:
           mkdir -p deploy/public_html
           cp -r dist/* deploy/public_html/
 
-      - name: 🚀 Sync to cPanel via SFTP
+      - name: 🔍 Report deploy size
         run: |
+          du -sh deploy/public_html
+          du -sh deploy/public_html/* | sort -rh | head -20
+
+      - name: 🚀 Sync to cPanel via SFTP
+        timeout-minutes: 20
+        run: |
+          sudo apt-get update
           sudo apt-get install -y lftp
           lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
-            sftp://${{ secrets.FTP_SERVER }} \
-            -e "set sftp:auto-confirm yes; set net:timeout 60; mirror -R deploy/ /; quit"
+            sftp://${{ secrets.FTP_SERVER }} <<'EOF'
+          set cmd:fail-exit yes
+          set sftp:auto-confirm yes
+          set net:timeout 30
+          set net:max-retries 3
+          set net:reconnect-interval-base 5
+          set xfer:timeout 120
+          set mirror:parallel-transfer-count 3
+          mirror -R --ignore-time --verbose \
+            --exclude '^posters/' \
+            deploy/public_html/ /public_html/
+          bye
+          EOF
