@@ -6,7 +6,6 @@ on:
       - main
   workflow_dispatch:
 
-# Stops two deploys from fighting over the same SFTP session
 concurrency:
   group: deploy-production
   cancel-in-progress: false
@@ -38,10 +37,33 @@ jobs:
           du -sh deploy/public_html
           du -sh deploy/public_html/* | sort -rh | head -20
 
+      # TEMPORARY DIAGNOSTIC STEP — delete once the connection issue is found.
+      # Prints the runner's public IP, tests TCP reachability on port 22,
+      # then dumps the full lftp/SSH protocol trace.
+      - name: 🔍 Diagnose SFTP
+        timeout-minutes: 5
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp netcat-openbsd
+          echo "=== Runner public IP ==="
+          curl -s https://api.ipify.org; echo
+          echo "=== TCP reachability on port 22 ==="
+          nc -zvw10 "${{ secrets.FTP_SERVER }}" 22 || echo "PORT 22 UNREACHABLE"
+          echo "=== lftp protocol trace ==="
+          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
+            sftp://${{ secrets.FTP_SERVER }} <<'EOF'
+          debug 5
+          set sftp:auto-confirm yes
+          set net:max-retries 1
+          set net:timeout 15
+          pwd
+          ls
+          bye
+          EOF
+
       - name: 🚀 Sync to cPanel via SFTP
         timeout-minutes: 20
         run: |
-          sudo apt-get update
           sudo apt-get install -y lftp
           lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
             sftp://${{ secrets.FTP_SERVER }} <<'EOF'
@@ -53,6 +75,7 @@ jobs:
           set xfer:timeout 120
           set mirror:parallel-transfer-count 3
           mirror -R --ignore-time --verbose \
+            --no-perms --no-umask \
             --exclude '^Posters/' \
             deploy/public_html/ public_html/
           bye
