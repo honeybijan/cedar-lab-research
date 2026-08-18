@@ -53,7 +53,7 @@ jobs:
           set xfer:timeout 120
           set mirror:parallel-transfer-count 3
           mirror -R --ignore-time --verbose \
-            --exclude '^posters/' \
-            deploy/public_html/ /public_html/
+            --exclude '^Posters/' \
+            deploy/public_html/ public_html/
           bye
           EOF
