@@ -37,46 +37,21 @@ jobs:
           du -sh deploy/public_html
           du -sh deploy/public_html/* | sort -rh | head -20
 
-      # TEMPORARY DIAGNOSTIC STEP — delete once the connection issue is found.
-      # Prints the runner's public IP, tests TCP reachability on port 22,
-      # then dumps the full lftp/SSH protocol trace.
-      - name: 🔍 Diagnose SFTP
-        timeout-minutes: 5
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y lftp netcat-openbsd
-          echo "=== Runner public IP ==="
-          curl -s https://api.ipify.org; echo
-          echo "=== TCP reachability on port 22 ==="
-          nc -zvw10 "${{ secrets.FTP_SERVER }}" 22 || echo "PORT 22 UNREACHABLE"
-          echo "=== lftp protocol trace ==="
-          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
-            sftp://${{ secrets.FTP_SERVER }} <<'EOF'
-          debug 5
-          set sftp:auto-confirm yes
-          set net:max-retries 1
-          set net:timeout 15
-          pwd
-          ls
-          bye
-          EOF
-
-      - name: 🚀 Sync to cPanel via SFTP
+      - name: 🚀 Sync to cPanel via FTP
         timeout-minutes: 20
-        run: |
-          sudo apt-get install -y lftp
-          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
-            sftp://${{ secrets.FTP_SERVER }} <<'EOF'
-          set cmd:fail-exit yes
-          set sftp:auto-confirm yes
-          set net:timeout 30
-          set net:max-retries 3
-          set net:reconnect-interval-base 5
-          set xfer:timeout 120
-          set mirror:parallel-transfer-count 3
-          mirror -R --ignore-time --verbose \
-            --no-perms --no-umask \
-            --exclude '^Posters/' \
-            deploy/public_html/ public_html/
-          bye
-          EOF
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./deploy/
+          server-dir: /
+          dangerous-clean-slate: false
+          timeout: 60000
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.DS_Store
