@@ -33,13 +33,13 @@ export const UNDERGRAD_STUDENTS = [
   { name: "Muhammad Ahmad" },
   { name: "Hailey King" },
   { name: "Benjamin Cavanagh" },
-  { name: "Tamier Baoyin" },
   { name: "Youmi Ji" },
 ];
 
 // ── ALUMNI ────────────────────────────────────────────────────────────────────
 // To add an alum: { name }
 export const ALUMNI = [
+  { name: "Tamier Baoyin" },
   { name: "Haley Lin" },
   { name: "Rafael Castro" },
   { name: "Ruchita Nair" },
