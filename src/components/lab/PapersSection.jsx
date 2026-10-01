@@ -10,7 +10,7 @@ const withBase = (url) => url?.startsWith("/") ? import.meta.env.BASE_URL + url.
 const PREVIEW_COUNT = 4; // number of papers shown before "show more"
 
 // Lab members whose names should be bolded in author lists
-const LAB_MEMBERS = ["Bijan Mazaheri", "Sophia Xiao", "Zou Yang", "Hamza Virk"];
+const LAB_MEMBERS = ["Bijan Mazaheri", "Sophia Xiao", "Zou Yang", "Hamza Virk", "Mateusz Gajewski"];
 
 
 

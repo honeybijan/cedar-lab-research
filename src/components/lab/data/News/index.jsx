@@ -3,7 +3,12 @@
 
 export const NEWS = [
   {
-    date: "October 2026",
+    date: "September 2026",
+    title: "Mateusz Gajewski joins the CEDAR Lab as a visiting Fulbright Scholar from Poznań University in Poland.",
+    description: "Welcome to the group!",
+  },
+  {
+    date: "September 2026",
     title: '"Causal Discovery from Unseen Environments" has been accepted to NeurIPS 2026!',
     description: "Congratulations to Sophia Xiao!",
   },
