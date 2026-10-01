@@ -3,6 +3,11 @@
 
 export const NEWS = [
   {
+    date: "October 2026",
+    title: '"Causal Discovery from Unseen Environments" has been accepted to NeurIPS 2026!',
+    description: "Congratulations to Sophia Xiao!",
+  },
+  {
     date: "June 2026",
     title: "Haley Lin (Williams College) and Rafael Castro (Caltech) are joining the CEDAR Lab this summer!",
     description: "Welcome to the group!",

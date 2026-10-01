@@ -4,6 +4,12 @@
 
 export const PUBLICATIONS = [
   {
+    title: "Causal Discovery from Unseen Environments",
+    authors: "Sophia Xiao, Bijan Mazaheri",
+    venue: "NeurIPS",
+    year: 2026,
+  },
+  {
     title: "Relaxing Faithfulness with Intervention-Only Causal Discovery",
     authors: "Bijan Mazaheri, Jiaqi Zhang, Caroline Uhler",
     venue: "UAI",
