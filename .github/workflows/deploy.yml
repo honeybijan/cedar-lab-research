@@ -1,4 +1,4 @@
-name: Build and Deploy to cPanel
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
@@ -6,12 +6,17 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 concurrency:
   group: deploy-production
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -26,32 +31,27 @@ jobs:
           cache: 'npm'
 
       - name: 🏗️ Install and Build
+        env:
+          VITE_BASE: /${{ github.event.repository.name }}/
         run: |
           npm ci
           npm run build
-          mkdir -p deploy/public_html
-          cp -r dist/* deploy/public_html/
+          # Serve the app for unknown paths so client-side routes work on reload
+          cp dist/index.html dist/404.html
 
-      - name: 🔍 Report deploy size
-        run: |
-          du -sh deploy/public_html
-          du -sh deploy/public_html/* | sort -rh | head -20
-
-      - name: 🚀 Sync to cPanel via FTP
-        timeout-minutes: 20
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+      - name: 📦 Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: ./deploy/
-          server-dir: /
-          dangerous-clean-slate: false
-          timeout: 60000
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.DS_Store
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

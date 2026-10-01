@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 import { FileText, ImageIcon, Video, Copy, Check, Presentation } from "lucide-react";
 import { PUBLICATIONS, PREPRINTS } from "./data/Papers/index";
 
+// Prefix site-relative links (e.g. "/Posters/x.pdf") with the deploy base path
+const withBase = (url) => url?.startsWith("/") ? import.meta.env.BASE_URL + url.slice(1) : url;
+
 const PREVIEW_COUNT = 4; // number of papers shown before "show more"
 
 // Lab members whose names should be bolded in author lists
@@ -69,7 +72,7 @@ function PaperCard({ paper, index }) {
       {(paper.paper || paper.poster || paper.slides || paper.talk || paper.cite) && (
         <div className="flex flex-wrap gap-2 mt-4">
           {paper.paper && (
-            <a href={paper.paper} target="_blank" rel="noopener noreferrer"
+            <a href={withBase(paper.paper)} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-all"
               style={{ backgroundColor: 'rgba(61,158,107,0.12)', color: '#3D9E6B' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(61,158,107,0.20)'}
@@ -78,7 +81,7 @@ function PaperCard({ paper, index }) {
             </a>
           )}
           {paper.poster && (
-            <a href={paper.poster} target="_blank" rel="noopener noreferrer"
+            <a href={withBase(paper.poster)} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-all hover:bg-opacity-70"
               style={{ backgroundColor: '#2E2820', color: '#A09080' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#C8BAA8'}
@@ -87,7 +90,7 @@ function PaperCard({ paper, index }) {
             </a>
           )}
           {paper.slides && (
-            <a href={paper.slides} target="_blank" rel="noopener noreferrer"
+            <a href={withBase(paper.slides)} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-all hover:bg-opacity-70"
               style={{ backgroundColor: '#2E2820', color: '#A09080' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#C8BAA8'}
@@ -96,7 +99,7 @@ function PaperCard({ paper, index }) {
             </a>
           )}
           {paper.talk && (
-            <a href={paper.talk} target="_blank" rel="noopener noreferrer"
+            <a href={withBase(paper.talk)} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md transition-all hover:bg-opacity-70"
               style={{ backgroundColor: '#2E2820', color: '#A09080' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#C8BAA8'}
