@@ -15,7 +15,7 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Causal Masking",
+    title: "Arbitraged ATEs",
     order: 2,
     description: "We often need to understand how specific information influences decision-making. Examples include **fair decision making**, where information either should not be used, and **covert decision-making**, where its use should not be detected. Determining whether a decision directly relies on an attribute or a correlated feature is notoriously difficult. We have shown optimizers can exploit this difficulty by hiding unfair decisions in hard-to-detect conditional dependencies. This means that prohibitions on average dependence do not prevent overall dependence, but they do make it hard to detect. Paradoxically, we have found that imposing ATE-based fairness constraints lead to only slightly more fair policies that persist undetected for much longer, resulting in far more unfairness overall.",
     paperTitles: [
