@@ -57,7 +57,7 @@ export default function HeroSection() {
         >
           <div className="w-12 h-[1px] mx-auto mb-10" style={{ background: '#3A3228' }} />
           <p className="text-sm sm:text-base leading-relaxed max-w-3xl mx-auto font-light" style={{ color: '#C8BAA8' }}>
-            Humans build causal reasoning around outliers and anomalies, but the statistics on which AI is built emphasize averages and frequency. The CEDAR Lab works at the interface of theoretical computer science and causal inference to study the lifecycle of causal information: we are interested in efficient experimentation that generates informative anomalies, and how to use these (and naturally occurring) anomalies to drive scientific hypotheses. We are also interested in how to regulate the resulting knowledge for fairness and privacy. Throughout, we ask what the fundamental limits of causal information recovery tell us about science, AI, and society.
+            Humans build causal reasoning around outliers and anomalies, but the statistics on which AI is built emphasize averages and frequency. The CEDAR Lab works at the interface of theoretical computer science and causal inference to study the lifecycle of causal information. We are interested in efficient experimentation that generates informative anomalies, and how to use these (and naturally occurring) anomalies to drive scientific hypotheses. We are also interested in how to regulate the resulting knowledge for fairness and privacy. Throughout, we ask what the fundamental limits of causal information recovery tell us about science, AI, and society.
           </p>
         </motion.div>
 
