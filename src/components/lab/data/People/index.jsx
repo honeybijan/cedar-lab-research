@@ -15,7 +15,7 @@ export const PI = {
 // ── ADMINISTRATIVE STAFF ──────────────────────────────────────────────────────
 // To add staff: { name, title, email }
 export const ADMIN_STAFF = [
-  { name: "Liz Brennan", title: "Academic Coordinator", email: "liz.brennan@dartmouth.edu" },
+  { name: "Maureen Troumbley", title: "Academic Coordinator", email: "Maureen.Troumbley@dartmouth.edu" },
 ];
 
 // ── PHD STUDENTS ─────────────────────────────────────────────────────────────
