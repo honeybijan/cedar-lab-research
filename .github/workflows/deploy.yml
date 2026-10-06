@@ -31,8 +31,6 @@ jobs:
           cache: 'npm'
 
       - name: 🏗️ Install and Build
-        env:
-          VITE_BASE: /${{ github.event.repository.name }}/
         run: |
           npm ci
           npm run build
