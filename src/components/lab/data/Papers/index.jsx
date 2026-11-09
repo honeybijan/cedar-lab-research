@@ -8,6 +8,9 @@ export const PUBLICATIONS = [
     authors: "Sophia Xiao, Bijan Mazaheri",
     venue: "NeurIPS",
     year: 2026,
+    url: "/Papers/UnseenEnvironments_NeurIPS2026.pdf",
+    paper: "/Papers/UnseenEnvironments_NeurIPS2026.pdf",
+    slides: "/presentations/UnseenEnvironments.html",
   },
   {
     title: "Relaxing Faithfulness with Intervention-Only Causal Discovery",
